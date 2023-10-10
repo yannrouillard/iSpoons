@@ -1,0 +1,49 @@
+[
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [],
+    "Variable": [
+      {
+        "def": "AutoMaximize.exclusions",
+        "desc": "List of application names for which the AutoMaximize mode should not be applied.",
+        "doc": "List of application names for which the AutoMaximize mode should not be applied.\n\nNotes:\n * Default value: `{}`",
+        "file": "Source/AutoMaximize.spoon//init.lua",
+        "lineno": "19",
+        "name": "exclusions",
+        "notes": [
+          " * Default value: `{}`"
+        ],
+        "signature": "AutoMaximize.exclusions",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "desc": "Automatically maximize new windows",
+    "doc": "Automatically maximize new windows\n",
+    "items": [
+      {
+        "def": "AutoMaximize.exclusions",
+        "desc": "List of application names for which the AutoMaximize mode should not be applied.",
+        "doc": "List of application names for which the AutoMaximize mode should not be applied.\n\nNotes:\n * Default value: `{}`",
+        "file": "Source/AutoMaximize.spoon//init.lua",
+        "lineno": "19",
+        "name": "exclusions",
+        "notes": [
+          " * Default value: `{}`"
+        ],
+        "signature": "AutoMaximize.exclusions",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "name": "AutoMaximize",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
+  }
+]
