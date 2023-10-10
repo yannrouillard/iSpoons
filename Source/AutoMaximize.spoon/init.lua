@@ -11,10 +11,6 @@ obj.version = "1.0"
 obj.author = "Yann Rouillard <yann@pleiades.fr.eu.org>"
 obj.license = "MIT - https://opensource.org/licenses/MIT"
 
----
---- Configurable parameters
----
-
 -- AutoMaximize.logger
 -- Variable
 -- Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.
@@ -28,15 +24,7 @@ obj.logger = hs.logger.new('AutoMaximize', 'info')
 ---  * Default value: `{}`
 obj.exclusions = {}
 
----
---- Private data
----
-
 obj._windowFilter = nil
-
----
---- Private methods
----
 
 function obj:_maximizeWindow(window, applicationName)
     local windowTitle = window:title()
@@ -48,10 +36,6 @@ function obj:_maximizeWindow(window, applicationName)
         end
     end
 end
-
----
---- Public interface
----
 
 function obj:init()
     self._windowFilter = hs.window.filter.new()
