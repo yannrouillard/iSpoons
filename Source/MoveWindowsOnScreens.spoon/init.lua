@@ -16,15 +16,7 @@ obj.license = "MIT - https://opensource.org/licenses/MIT"
 -- Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.
 obj.logger = hs.logger.new('MoveWindowsOnScreens', 'info')
 
----
---- Constant
----
-
 local FORCE_ONSCREEN_SPLIT_MODIFIER = "alt"
-
----
---- Helper functions
----
 
 function first(table)
     if #table > 0 then
@@ -75,13 +67,12 @@ function placeChosenWindow(choice)
     end
 end
 
----
---- Public interface
----
-
 --- MoveWindowsOnScreens:moveWindowLeft()
 --- Method
 --- Move the current window on the left screen and maximize it
+---
+--- Parameters:
+---  * None
 ---
 function obj:moveWindowLeft()
     hs.window.focusedWindow():moveOneScreenWest(false, true, 0)
@@ -92,6 +83,9 @@ end
 --- Method
 --- Move the current window on the right screen and maximize it
 ---
+--- Parameters:
+---  * None
+---
 function obj:moveWindowRight()
     hs.window.focusedWindow():moveOneScreenEast(false, true, 0)
     hs.window.focusedWindow():maximize()
@@ -101,6 +95,9 @@ end
 --- Method
 --- Focus the window which is on the left scren
 ---
+--- Parameters:
+---  * None
+---
 function obj:focusWindowLeft()
     hs.window.focusedWindow():focusWindowWest(nil, true)
 end
@@ -109,6 +106,9 @@ end
 --- Method
 --- Focus the window which is on the right scren
 ---
+--- Parameters:
+---  * None
+---
 function obj:focusWindowRight()
     hs.window.focusedWindow():focusWindowEast(nil, true)
 end
@@ -116,6 +116,9 @@ end
 --- MoveWindowsOnScreens:switchWindowLeftAndRight()
 --- Method
 --- Switch the screen of the current window and the window of the left/right screen
+---
+--- Parameters:
+---  * None
 ---
 function obj:switchWindowLeftAndRight()
     local currentWindow = hs.window.focusedWindow()
@@ -140,6 +143,9 @@ end
 --- MoveWindowsOnScreens:placeSelectedWindowOnTheRight()
 --- Method
 --- Open a chooser to select a window to place on the right screen and maximize it
+---
+--- Parameters:
+---  * None
 ---
 function obj:placeSelectedWindowOnTheRight()
     local availableWindows = hs.fnutils.map(listOtherWindows(), mapWindowToChoice)
