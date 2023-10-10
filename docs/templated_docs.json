@@ -1,0 +1,425 @@
+[
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [],
+    "Variable": [
+      {
+        "def": "AutoMaximize.exclusions",
+        "def_gfm": "AutoMaximize.exclusions",
+        "desc": "List of application names for which the AutoMaximize mode should not be applied.",
+        "desc_gfm": "<p>List of application names for which the AutoMaximize mode should not be applied.</p>\n",
+        "doc": "List of application names for which the AutoMaximize mode should not be applied.\n\nNotes:\n * Default value: `{}`",
+        "doc_gfm": "<p>List of application names for which the AutoMaximize mode should not be applied.</p>\n<p>Notes:</p>\n<ul>\n<li>Default value: <code>{}</code></li>\n</ul>\n",
+        "file": "Source/AutoMaximize.spoon/init.lua",
+        "lineno": "19",
+        "name": "exclusions",
+        "notes": [
+          " * Default value: `{}`"
+        ],
+        "notes_gfm": "<ul>\n<li>Default value: <code>{}</code></li>\n</ul>\n",
+        "signature": "AutoMaximize.exclusions",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "desc": "Automatically maximize new windows",
+    "desc_gfm": "<p>Automatically maximize new windows</p>\n",
+    "doc": "Automatically maximize new windows\n",
+    "doc_gfm": "<p>Automatically maximize new windows</p>\n",
+    "items": [
+      {
+        "def": "AutoMaximize.exclusions",
+        "def_gfm": "AutoMaximize.exclusions",
+        "desc": "List of application names for which the AutoMaximize mode should not be applied.",
+        "desc_gfm": "<p>List of application names for which the AutoMaximize mode should not be applied.</p>\n",
+        "doc": "List of application names for which the AutoMaximize mode should not be applied.\n\nNotes:\n * Default value: `{}`",
+        "doc_gfm": "<p>List of application names for which the AutoMaximize mode should not be applied.</p>\n<p>Notes:</p>\n<ul>\n<li>Default value: <code>{}</code></li>\n</ul>\n",
+        "file": "Source/AutoMaximize.spoon/init.lua",
+        "lineno": "19",
+        "name": "exclusions",
+        "notes": [
+          " * Default value: `{}`"
+        ],
+        "notes_gfm": "<ul>\n<li>Default value: <code>{}</code></li>\n</ul>\n",
+        "signature": "AutoMaximize.exclusions",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "name": "AutoMaximize",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [],
+    "Variable": [],
+    "desc": "Automatically switch Input Source depending on the current application running",
+    "desc_gfm": "<p>Automatically switch Input Source depending on the current application running</p>\n",
+    "doc": "Automatically switch Input Source depending on the current application running\n",
+    "doc_gfm": "<p>Automatically switch Input Source depending on the current application running</p>\n",
+    "items": [],
+    "name": "InputSourceAutoSwitch",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "MoveWindowsOnScreens:bindHotkeys(mapping) -> self",
+        "def_gfm": "MoveWindowsOnScreens:bindHotkeys(mapping) -&gt; self",
+        "desc": "Binds hotkeys for MoveWindowsOnScreens",
+        "desc_gfm": "<p>Binds hotkeys for MoveWindowsOnScreens</p>\n",
+        "doc": "Binds hotkeys for MoveWindowsOnScreens\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for each available operation\n\nReturns:\n * The MoveWindowsOnScreens object",
+        "doc_gfm": "<p>Binds hotkeys for MoveWindowsOnScreens</p>\n<p>Parameters:</p>\n<ul>\n<li>mapping - A table containing hotkey modifier/key details for each available operation</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The MoveWindowsOnScreens object</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/MoveWindowsOnScreens.spoon/init.lua",
+        "lineno": "156",
+        "name": "bindHotkeys",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for each available operation"
+        ],
+        "parameters_gfm": "<ul>\n<li>mapping - A table containing hotkey modifier/key details for each available operation</li>\n</ul>\n",
+        "returns": [
+          " * The MoveWindowsOnScreens object"
+        ],
+        "returns_gfm": "<ul>\n<li>The MoveWindowsOnScreens object</li>\n</ul>\n",
+        "signature": "MoveWindowsOnScreens:bindHotkeys(mapping) -> self",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "MoveWindowsOnScreens:focusWindowLeft()",
+        "def_gfm": "MoveWindowsOnScreens:focusWindowLeft()",
+        "desc": "Focus the window which is on the left scren",
+        "desc_gfm": "<p>Focus the window which is on the left scren</p>\n",
+        "doc": "Focus the window which is on the left scren\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Focus the window which is on the left scren</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/MoveWindowsOnScreens.spoon/init.lua",
+        "lineno": "94",
+        "name": "focusWindowLeft",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "MoveWindowsOnScreens:focusWindowLeft()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "MoveWindowsOnScreens:focusWindowRight()",
+        "def_gfm": "MoveWindowsOnScreens:focusWindowRight()",
+        "desc": "Focus the window which is on the right scren",
+        "desc_gfm": "<p>Focus the window which is on the right scren</p>\n",
+        "doc": "Focus the window which is on the right scren\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Focus the window which is on the right scren</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/MoveWindowsOnScreens.spoon/init.lua",
+        "lineno": "105",
+        "name": "focusWindowRight",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "MoveWindowsOnScreens:focusWindowRight()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "MoveWindowsOnScreens:moveWindowLeft()",
+        "def_gfm": "MoveWindowsOnScreens:moveWindowLeft()",
+        "desc": "Move the current window on the left screen and maximize it",
+        "desc_gfm": "<p>Move the current window on the left screen and maximize it</p>\n",
+        "doc": "Move the current window on the left screen and maximize it\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Move the current window on the left screen and maximize it</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/MoveWindowsOnScreens.spoon/init.lua",
+        "lineno": "70",
+        "name": "moveWindowLeft",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "MoveWindowsOnScreens:moveWindowLeft()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "MoveWindowsOnScreens:moveWindowRight()",
+        "def_gfm": "MoveWindowsOnScreens:moveWindowRight()",
+        "desc": "Move the current window on the right screen and maximize it",
+        "desc_gfm": "<p>Move the current window on the right screen and maximize it</p>\n",
+        "doc": "Move the current window on the right screen and maximize it\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Move the current window on the right screen and maximize it</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/MoveWindowsOnScreens.spoon/init.lua",
+        "lineno": "82",
+        "name": "moveWindowRight",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "MoveWindowsOnScreens:moveWindowRight()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "MoveWindowsOnScreens:placeSelectedWindowOnTheRight()",
+        "def_gfm": "MoveWindowsOnScreens:placeSelectedWindowOnTheRight()",
+        "desc": "Open a chooser to select a window to place on the right screen and maximize it",
+        "desc_gfm": "<p>Open a chooser to select a window to place on the right screen and maximize it</p>\n",
+        "doc": "Open a chooser to select a window to place on the right screen and maximize it\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Open a chooser to select a window to place on the right screen and maximize it</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/MoveWindowsOnScreens.spoon/init.lua",
+        "lineno": "143",
+        "name": "placeSelectedWindowOnTheRight",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "MoveWindowsOnScreens:placeSelectedWindowOnTheRight()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "MoveWindowsOnScreens:switchWindowLeftAndRight()",
+        "def_gfm": "MoveWindowsOnScreens:switchWindowLeftAndRight()",
+        "desc": "Switch the screen of the current window and the window of the left/right screen",
+        "desc_gfm": "<p>Switch the screen of the current window and the window of the left/right screen</p>\n",
+        "doc": "Switch the screen of the current window and the window of the left/right screen\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Switch the screen of the current window and the window of the left/right screen</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/MoveWindowsOnScreens.spoon/init.lua",
+        "lineno": "116",
+        "name": "switchWindowLeftAndRight",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "MoveWindowsOnScreens:switchWindowLeftAndRight()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Provide easy window functions and hotkeys to move window between screens",
+    "desc_gfm": "<p>Provide easy window functions and hotkeys to move window between screens</p>\n",
+    "doc": "Provide easy window functions and hotkeys to move window between screens\n",
+    "doc_gfm": "<p>Provide easy window functions and hotkeys to move window between screens</p>\n",
+    "items": [
+      {
+        "def": "MoveWindowsOnScreens:bindHotkeys(mapping) -> self",
+        "def_gfm": "MoveWindowsOnScreens:bindHotkeys(mapping) -&gt; self",
+        "desc": "Binds hotkeys for MoveWindowsOnScreens",
+        "desc_gfm": "<p>Binds hotkeys for MoveWindowsOnScreens</p>\n",
+        "doc": "Binds hotkeys for MoveWindowsOnScreens\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for each available operation\n\nReturns:\n * The MoveWindowsOnScreens object",
+        "doc_gfm": "<p>Binds hotkeys for MoveWindowsOnScreens</p>\n<p>Parameters:</p>\n<ul>\n<li>mapping - A table containing hotkey modifier/key details for each available operation</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The MoveWindowsOnScreens object</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/MoveWindowsOnScreens.spoon/init.lua",
+        "lineno": "156",
+        "name": "bindHotkeys",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for each available operation"
+        ],
+        "parameters_gfm": "<ul>\n<li>mapping - A table containing hotkey modifier/key details for each available operation</li>\n</ul>\n",
+        "returns": [
+          " * The MoveWindowsOnScreens object"
+        ],
+        "returns_gfm": "<ul>\n<li>The MoveWindowsOnScreens object</li>\n</ul>\n",
+        "signature": "MoveWindowsOnScreens:bindHotkeys(mapping) -> self",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "MoveWindowsOnScreens:focusWindowLeft()",
+        "def_gfm": "MoveWindowsOnScreens:focusWindowLeft()",
+        "desc": "Focus the window which is on the left scren",
+        "desc_gfm": "<p>Focus the window which is on the left scren</p>\n",
+        "doc": "Focus the window which is on the left scren\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Focus the window which is on the left scren</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/MoveWindowsOnScreens.spoon/init.lua",
+        "lineno": "94",
+        "name": "focusWindowLeft",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "MoveWindowsOnScreens:focusWindowLeft()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "MoveWindowsOnScreens:focusWindowRight()",
+        "def_gfm": "MoveWindowsOnScreens:focusWindowRight()",
+        "desc": "Focus the window which is on the right scren",
+        "desc_gfm": "<p>Focus the window which is on the right scren</p>\n",
+        "doc": "Focus the window which is on the right scren\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Focus the window which is on the right scren</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/MoveWindowsOnScreens.spoon/init.lua",
+        "lineno": "105",
+        "name": "focusWindowRight",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "MoveWindowsOnScreens:focusWindowRight()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "MoveWindowsOnScreens:moveWindowLeft()",
+        "def_gfm": "MoveWindowsOnScreens:moveWindowLeft()",
+        "desc": "Move the current window on the left screen and maximize it",
+        "desc_gfm": "<p>Move the current window on the left screen and maximize it</p>\n",
+        "doc": "Move the current window on the left screen and maximize it\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Move the current window on the left screen and maximize it</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/MoveWindowsOnScreens.spoon/init.lua",
+        "lineno": "70",
+        "name": "moveWindowLeft",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "MoveWindowsOnScreens:moveWindowLeft()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "MoveWindowsOnScreens:moveWindowRight()",
+        "def_gfm": "MoveWindowsOnScreens:moveWindowRight()",
+        "desc": "Move the current window on the right screen and maximize it",
+        "desc_gfm": "<p>Move the current window on the right screen and maximize it</p>\n",
+        "doc": "Move the current window on the right screen and maximize it\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Move the current window on the right screen and maximize it</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/MoveWindowsOnScreens.spoon/init.lua",
+        "lineno": "82",
+        "name": "moveWindowRight",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "MoveWindowsOnScreens:moveWindowRight()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "MoveWindowsOnScreens:placeSelectedWindowOnTheRight()",
+        "def_gfm": "MoveWindowsOnScreens:placeSelectedWindowOnTheRight()",
+        "desc": "Open a chooser to select a window to place on the right screen and maximize it",
+        "desc_gfm": "<p>Open a chooser to select a window to place on the right screen and maximize it</p>\n",
+        "doc": "Open a chooser to select a window to place on the right screen and maximize it\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Open a chooser to select a window to place on the right screen and maximize it</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/MoveWindowsOnScreens.spoon/init.lua",
+        "lineno": "143",
+        "name": "placeSelectedWindowOnTheRight",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "MoveWindowsOnScreens:placeSelectedWindowOnTheRight()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "MoveWindowsOnScreens:switchWindowLeftAndRight()",
+        "def_gfm": "MoveWindowsOnScreens:switchWindowLeftAndRight()",
+        "desc": "Switch the screen of the current window and the window of the left/right screen",
+        "desc_gfm": "<p>Switch the screen of the current window and the window of the left/right screen</p>\n",
+        "doc": "Switch the screen of the current window and the window of the left/right screen\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Switch the screen of the current window and the window of the left/right screen</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/MoveWindowsOnScreens.spoon/init.lua",
+        "lineno": "116",
+        "name": "switchWindowLeftAndRight",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "MoveWindowsOnScreens:switchWindowLeftAndRight()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "MoveWindowsOnScreens",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
+  }
+]

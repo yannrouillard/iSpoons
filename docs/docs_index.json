@@ -1,0 +1,65 @@
+[
+  {
+    "desc": "Automatically maximize new windows",
+    "name": "AutoMaximize",
+    "type": "Module"
+  },
+  {
+    "desc": "List of application names for which the AutoMaximize mode should not be applied.",
+    "module": "AutoMaximize",
+    "name": "exclusions",
+    "type": "Variable"
+  },
+  {
+    "desc": "Automatically switch Input Source depending on the current application running",
+    "name": "InputSourceAutoSwitch",
+    "type": "Module"
+  },
+  {
+    "desc": "Provide easy window functions and hotkeys to move window between screens",
+    "name": "MoveWindowsOnScreens",
+    "type": "Module"
+  },
+  {
+    "desc": "Binds hotkeys for MoveWindowsOnScreens",
+    "module": "MoveWindowsOnScreens",
+    "name": "bindHotkeys",
+    "type": "Method"
+  },
+  {
+    "desc": "Focus the window which is on the left scren",
+    "module": "MoveWindowsOnScreens",
+    "name": "focusWindowLeft",
+    "type": "Method"
+  },
+  {
+    "desc": "Focus the window which is on the right scren",
+    "module": "MoveWindowsOnScreens",
+    "name": "focusWindowRight",
+    "type": "Method"
+  },
+  {
+    "desc": "Move the current window on the left screen and maximize it",
+    "module": "MoveWindowsOnScreens",
+    "name": "moveWindowLeft",
+    "type": "Method"
+  },
+  {
+    "desc": "Move the current window on the right screen and maximize it",
+    "module": "MoveWindowsOnScreens",
+    "name": "moveWindowRight",
+    "type": "Method"
+  },
+  {
+    "desc": "Open a chooser to select a window to place on the right screen and maximize it",
+    "module": "MoveWindowsOnScreens",
+    "name": "placeSelectedWindowOnTheRight",
+    "type": "Method"
+  },
+  {
+    "desc": "Switch the screen of the current window and the window of the left/right screen",
+    "module": "MoveWindowsOnScreens",
+    "name": "switchWindowLeftAndRight",
+    "type": "Method"
+  }
+]

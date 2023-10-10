@@ -1,0 +1,278 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hammerspoon docs: MoveWindowsOnScreens</title>
+    <style type="text/css">
+      a { text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      th { background-color: #DDDDDD; vertical-align: top; padding: 3px; }
+      td { width: 100%; background-color: #EEEEEE; vertical-align: top; padding: 3px; }
+      table { width: 100% ; border: 1px solid #0; text-align: left; }
+      section > table table td { width: 0; }
+    </style>
+    <link rel="stylesheet" href="docs.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="./index.html">docs</a> &raquo; MoveWindowsOnScreens</h1>
+      <p>Provide easy window functions and hotkeys to move window between screens</p>
+
+      </header>
+      <h3>API Overview</h3>
+      <ul>
+        <li>Methods - API calls which can only be made on an object returned by a constructor</li>
+          <ul>
+            <li><a href="#bindHotkeys">bindHotkeys</a></li>
+            <li><a href="#focusWindowLeft">focusWindowLeft</a></li>
+            <li><a href="#focusWindowRight">focusWindowRight</a></li>
+            <li><a href="#moveWindowLeft">moveWindowLeft</a></li>
+            <li><a href="#moveWindowRight">moveWindowRight</a></li>
+            <li><a href="#placeSelectedWindowOnTheRight">placeSelectedWindowOnTheRight</a></li>
+            <li><a href="#switchWindowLeftAndRight">switchWindowLeftAndRight</a></li>
+          </ul>
+      </ul>
+      <h3>API Documentation</h3>
+        <h4 class="documentation-section">Methods</h4>
+          <section id="bindHotkeys">
+            <a name="//apple_ref/cpp/Method/bindHotkeys" class="dashAnchor"></a>
+            <h5><a href="#bindHotkeys">bindHotkeys</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>MoveWindowsOnScreens:bindHotkeys(mapping) -&gt; self</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Binds hotkeys for MoveWindowsOnScreens</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>mapping - A table containing hotkey modifier/key details for each available operation</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td><ul>
+<li>The MoveWindowsOnScreens object</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/MoveWindowsOnScreens.spoon/init.lua#L156">Source/MoveWindowsOnScreens.spoon/init.lua line 156</a></td>
+              </tr>
+            </table>
+          </section>
+          <section id="focusWindowLeft">
+            <a name="//apple_ref/cpp/Method/focusWindowLeft" class="dashAnchor"></a>
+            <h5><a href="#focusWindowLeft">focusWindowLeft</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>MoveWindowsOnScreens:focusWindowLeft()</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Focus the window which is on the left scren</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>None</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td></td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/MoveWindowsOnScreens.spoon/init.lua#L94">Source/MoveWindowsOnScreens.spoon/init.lua line 94</a></td>
+              </tr>
+            </table>
+          </section>
+          <section id="focusWindowRight">
+            <a name="//apple_ref/cpp/Method/focusWindowRight" class="dashAnchor"></a>
+            <h5><a href="#focusWindowRight">focusWindowRight</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>MoveWindowsOnScreens:focusWindowRight()</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Focus the window which is on the right scren</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>None</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td></td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/MoveWindowsOnScreens.spoon/init.lua#L105">Source/MoveWindowsOnScreens.spoon/init.lua line 105</a></td>
+              </tr>
+            </table>
+          </section>
+          <section id="moveWindowLeft">
+            <a name="//apple_ref/cpp/Method/moveWindowLeft" class="dashAnchor"></a>
+            <h5><a href="#moveWindowLeft">moveWindowLeft</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>MoveWindowsOnScreens:moveWindowLeft()</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Move the current window on the left screen and maximize it</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>None</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td></td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/MoveWindowsOnScreens.spoon/init.lua#L70">Source/MoveWindowsOnScreens.spoon/init.lua line 70</a></td>
+              </tr>
+            </table>
+          </section>
+          <section id="moveWindowRight">
+            <a name="//apple_ref/cpp/Method/moveWindowRight" class="dashAnchor"></a>
+            <h5><a href="#moveWindowRight">moveWindowRight</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>MoveWindowsOnScreens:moveWindowRight()</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Move the current window on the right screen and maximize it</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>None</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td></td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/MoveWindowsOnScreens.spoon/init.lua#L82">Source/MoveWindowsOnScreens.spoon/init.lua line 82</a></td>
+              </tr>
+            </table>
+          </section>
+          <section id="placeSelectedWindowOnTheRight">
+            <a name="//apple_ref/cpp/Method/placeSelectedWindowOnTheRight" class="dashAnchor"></a>
+            <h5><a href="#placeSelectedWindowOnTheRight">placeSelectedWindowOnTheRight</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>MoveWindowsOnScreens:placeSelectedWindowOnTheRight()</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Open a chooser to select a window to place on the right screen and maximize it</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>None</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td></td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/MoveWindowsOnScreens.spoon/init.lua#L143">Source/MoveWindowsOnScreens.spoon/init.lua line 143</a></td>
+              </tr>
+            </table>
+          </section>
+          <section id="switchWindowLeftAndRight">
+            <a name="//apple_ref/cpp/Method/switchWindowLeftAndRight" class="dashAnchor"></a>
+            <h5><a href="#switchWindowLeftAndRight">switchWindowLeftAndRight</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>MoveWindowsOnScreens:switchWindowLeftAndRight()</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Switch the screen of the current window and the window of the left/right screen</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>None</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td></td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/MoveWindowsOnScreens.spoon/init.lua#L116">Source/MoveWindowsOnScreens.spoon/init.lua line 116</a></td>
+              </tr>
+            </table>
+          </section>
+  </body>
+</html>
