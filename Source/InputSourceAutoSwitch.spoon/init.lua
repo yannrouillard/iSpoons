@@ -1,4 +1,4 @@
---- === InputSourceAutoSwtich ===
+--- === InputSourceAutoSwitch ===
 ---
 --- Automatically switch Input Source depending on the current application running
 ---
@@ -10,10 +10,6 @@ obj.name = "InputSourceAutoSwitch"
 obj.version = "1.0"
 obj.author = "Yann Rouillard <yann@pleiades.fr.eu.org>"
 obj.license = "MIT - https://opensource.org/licenses/MIT"
-
----
---- Configurable parameters
----
 
 -- InputSourceAutoSwitch.logger
 -- Variable
@@ -33,10 +29,6 @@ obj.logger = hs.logger.new('InputSourceAutoSwtich', 'info')
 --   } 
 obj.inputSourcePerApplication = {}
 
----
---- Private methods
----
-
 function obj:_setApplicationInputSource(appName, inputSource, event)
     event = event or hs.window.filter.windowFocused
 
@@ -47,10 +39,6 @@ function obj:_setApplicationInputSource(appName, inputSource, event)
 
     hs.window.filter.new(appName):subscribe(event, setInputSourceFunction)
 end
-
----
---- Public methods
----
 
 function obj:start()
     self.logger.d("Starting InputSourceAutoSwitch mode")
