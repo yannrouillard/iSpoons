@@ -61,5 +61,10 @@
     "module": "MoveWindowsOnScreens",
     "name": "switchWindowLeftAndRight",
     "type": "Method"
+  },
+  {
+    "desc": "Automatically stop/start music and increase/decrease volume when entering/leaving a video conference",
+    "name": "VideoConfAutoSound",
+    "type": "Module"
   }
 ]

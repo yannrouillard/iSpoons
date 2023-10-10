@@ -421,5 +421,24 @@
     "stripped_doc": "",
     "submodules": [],
     "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [],
+    "Variable": [],
+    "desc": "Automatically stop/start music and increase/decrease volume when entering/leaving a video conference",
+    "desc_gfm": "<p>Automatically stop/start music and increase/decrease volume when entering/leaving a video conference</p>\n",
+    "doc": "Automatically stop/start music and increase/decrease volume when entering/leaving a video conference\n",
+    "doc_gfm": "<p>Automatically stop/start music and increase/decrease volume when entering/leaving a video conference</p>\n",
+    "items": [],
+    "name": "VideoConfAutoSound",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
   }
 ]
