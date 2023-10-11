@@ -602,6 +602,1147 @@
     "Function": [],
     "Method": [
       {
+        "def": "Seal:bindHotkeys(mapping)",
+        "def_gfm": "Seal:bindHotkeys(mapping)",
+        "desc": "Binds hotkeys for Seal",
+        "desc_gfm": "<p>Binds hotkeys for Seal</p>\n",
+        "doc": "Binds hotkeys for Seal\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for the following (optional) items:\n  * show - This will cause Seal's UI to be shown\n  * toggle - This will cause Seal's UI to be shown or hidden depending on its current state\n\nReturns:\n * The Seal object",
+        "doc_gfm": "<p>Binds hotkeys for Seal</p>\n<p>Parameters:</p>\n<ul>\n<li>mapping - A table containing hotkey modifier/key details for the following (optional) items:</li>\n<li>show - This will cause Seal's UI to be shown</li>\n<li>toggle - This will cause Seal's UI to be shown or hidden depending on its current state</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "177",
+        "name": "bindHotkeys",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for the following (optional) items:\n   * show - This will cause Seal's UI to be shown\n   * toggle - This will cause Seal's UI to be shown or hidden depending on its current state"
+        ],
+        "parameters_gfm": "<ul>\n<li>mapping - A table containing hotkey modifier/key details for the following (optional) items:<ul>\n<li>show - This will cause Seal's UI to be shown</li>\n<li>toggle - This will cause Seal's UI to be shown or hidden depending on its current state</li>\n</ul>\n</li>\n</ul>\n",
+        "returns": [
+          " * The Seal object"
+        ],
+        "returns_gfm": "<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "signature": "Seal:bindHotkeys(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:loadPluginFromFile(plugin_name, file)",
+        "def_gfm": "Seal:loadPluginFromFile(plugin_name, file)",
+        "desc": "Loads a plugin from a given file",
+        "desc_gfm": "<p>Loads a plugin from a given file</p>\n",
+        "doc": "Loads a plugin from a given file\n\nParameters:\n * plugin_name - the name of the plugin, without \"seal_\" at the beginning or \".lua\" at the end\n * file - the file where the plugin code is stored.\n\nReturns:\n * The Seal object if the plugin was successfully loaded, `nil` otherwise\n\nNotes:\n * You should normally use `Seal:loadPlugins()`. This method allows you to load plugins\n   from non-standard locations and is mostly a development interface.\n * Some plugins may immediately begin doing background work (e.g. Spotlight searches)",
+        "doc_gfm": "<p>Loads a plugin from a given file</p>\n<p>Parameters:</p>\n<ul>\n<li>plugin_name - the name of the plugin, without &quot;seal_&quot; at the beginning or &quot;.lua&quot; at the end</li>\n<li>file - the file where the plugin code is stored.</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Seal object if the plugin was successfully loaded, <code>nil</code> otherwise</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>You should normally use <code>Seal:loadPlugins()</code>. This method allows you to load plugins\nfrom non-standard locations and is mostly a development interface.</li>\n<li>Some plugins may immediately begin doing background work (e.g. Spotlight searches)</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "112",
+        "name": "loadPluginFromFile",
+        "notes": [
+          " * You should normally use `Seal:loadPlugins()`. This method allows you to load plugins",
+          "   from non-standard locations and is mostly a development interface.",
+          " * Some plugins may immediately begin doing background work (e.g. Spotlight searches)"
+        ],
+        "notes_gfm": "<ul>\n<li>You should normally use <code>Seal:loadPlugins()</code>. This method allows you to load plugins\nfrom non-standard locations and is mostly a development interface.</li>\n<li>Some plugins may immediately begin doing background work (e.g. Spotlight searches)</li>\n</ul>\n",
+        "parameters": [
+          " * plugin_name - the name of the plugin, without \"seal_\" at the beginning or \".lua\" at the end",
+          " * file - the file where the plugin code is stored."
+        ],
+        "parameters_gfm": "<ul>\n<li>plugin_name - the name of the plugin, without &quot;seal_&quot; at the beginning or &quot;.lua&quot; at the end</li>\n<li>file - the file where the plugin code is stored.</li>\n</ul>\n",
+        "returns": [
+          " * The Seal object if the plugin was successfully loaded, `nil` otherwise"
+        ],
+        "returns_gfm": "<ul>\n<li>The Seal object if the plugin was successfully loaded, <code>nil</code> otherwise</li>\n</ul>\n",
+        "signature": "Seal:loadPluginFromFile(plugin_name, file)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:loadPlugins(plugins)",
+        "def_gfm": "Seal:loadPlugins(plugins)",
+        "desc": "Loads a list of Seal plugins",
+        "desc_gfm": "<p>Loads a list of Seal plugins</p>\n",
+        "doc": "Loads a list of Seal plugins\n\nParameters:\n * plugins - A list containing the names of plugins to load\n\nReturns:\n * The Seal object\n\nNotes:\n * The plugins live inside the Seal.spoon directory\n * The plugin names in the list, should not have `seal_` at the start, or `.lua` at the end\n * Some plugins may immediately begin doing background work (e.g. Spotlight searches)",
+        "doc_gfm": "<p>Loads a list of Seal plugins</p>\n<p>Parameters:</p>\n<ul>\n<li>plugins - A list containing the names of plugins to load</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Seal object</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>The plugins live inside the Seal.spoon directory</li>\n<li>The plugin names in the list, should not have <code>seal_</code> at the start, or <code>.lua</code> at the end</li>\n<li>Some plugins may immediately begin doing background work (e.g. Spotlight searches)</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "140",
+        "name": "loadPlugins",
+        "notes": [
+          " * The plugins live inside the Seal.spoon directory",
+          " * The plugin names in the list, should not have `seal_` at the start, or `.lua` at the end",
+          " * Some plugins may immediately begin doing background work (e.g. Spotlight searches)"
+        ],
+        "notes_gfm": "<ul>\n<li>The plugins live inside the Seal.spoon directory</li>\n<li>The plugin names in the list, should not have <code>seal_</code> at the start, or <code>.lua</code> at the end</li>\n<li>Some plugins may immediately begin doing background work (e.g. Spotlight searches)</li>\n</ul>\n",
+        "parameters": [
+          " * plugins - A list containing the names of plugins to load"
+        ],
+        "parameters_gfm": "<ul>\n<li>plugins - A list containing the names of plugins to load</li>\n</ul>\n",
+        "returns": [
+          " * The Seal object"
+        ],
+        "returns_gfm": "<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "signature": "Seal:loadPlugins(plugins)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:refreshAllCommands()",
+        "def_gfm": "Seal:refreshAllCommands()",
+        "desc": "Refresh the list of commands provided by all the currently loaded plugins.",
+        "desc_gfm": "<p>Refresh the list of commands provided by all the currently loaded plugins.</p>\n",
+        "doc": "Refresh the list of commands provided by all the currently loaded plugins.\n\nParameters:\n * None\n\nReturns:\n * The Seal object\n\nNotes:\n * Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands.",
+        "doc_gfm": "<p>Refresh the list of commands provided by all the currently loaded plugins.</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Seal object</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands.</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "93",
+        "name": "refreshAllCommands",
+        "notes": [
+          " * Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands."
+        ],
+        "notes_gfm": "<ul>\n<li>Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands.</li>\n</ul>\n",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * The Seal object"
+        ],
+        "returns_gfm": "<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "signature": "Seal:refreshAllCommands()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:refreshCommandsForPlugin(plugin_name)",
+        "def_gfm": "Seal:refreshCommandsForPlugin(plugin_name)",
+        "desc": "Refresh the list of commands provided by the given plugin.",
+        "desc_gfm": "<p>Refresh the list of commands provided by the given plugin.</p>\n",
+        "doc": "Refresh the list of commands provided by the given plugin.\n\nParameters:\n * plugin_name - the name of the plugin. Should be the name as passed to `loadPlugins()` or `loadPluginFromFile`.\n\nReturns:\n * The Seal object\n\nNotes:\n * Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands.",
+        "doc_gfm": "<p>Refresh the list of commands provided by the given plugin.</p>\n<p>Parameters:</p>\n<ul>\n<li>plugin_name - the name of the plugin. Should be the name as passed to <code>loadPlugins()</code> or <code>loadPluginFromFile</code>.</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Seal object</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands.</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "68",
+        "name": "refreshCommandsForPlugin",
+        "notes": [
+          " * Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands."
+        ],
+        "notes_gfm": "<ul>\n<li>Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands.</li>\n</ul>\n",
+        "parameters": [
+          " * plugin_name - the name of the plugin. Should be the name as passed to `loadPlugins()` or `loadPluginFromFile`."
+        ],
+        "parameters_gfm": "<ul>\n<li>plugin_name - the name of the plugin. Should be the name as passed to <code>loadPlugins()</code> or <code>loadPluginFromFile</code>.</li>\n</ul>\n",
+        "returns": [
+          " * The Seal object"
+        ],
+        "returns_gfm": "<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "signature": "Seal:refreshCommandsForPlugin(plugin_name)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:show(query)",
+        "def_gfm": "Seal:show(query)",
+        "desc": "Shows the Seal UI",
+        "desc_gfm": "<p>Shows the Seal UI</p>\n",
+        "doc": "Shows the Seal UI\n\nParameters:\n * query - An optional string to pre-populate the query box with\n\nReturns:\n * None\n\nNotes:\n * This may be useful if you wish to show Seal in response to something other than its hotkey",
+        "doc_gfm": "<p>Shows the Seal UI</p>\n<p>Parameters:</p>\n<ul>\n<li>query - An optional string to pre-populate the query box with</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>This may be useful if you wish to show Seal in response to something other than its hotkey</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "262",
+        "name": "show",
+        "notes": [
+          " * This may be useful if you wish to show Seal in response to something other than its hotkey"
+        ],
+        "notes_gfm": "<ul>\n<li>This may be useful if you wish to show Seal in response to something other than its hotkey</li>\n</ul>\n",
+        "parameters": [
+          " * query - An optional string to pre-populate the query box with"
+        ],
+        "parameters_gfm": "<ul>\n<li>query - An optional string to pre-populate the query box with</li>\n</ul>\n",
+        "returns": [
+          " * None"
+        ],
+        "returns_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "signature": "Seal:show(query)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:start()",
+        "def_gfm": "Seal:start()",
+        "desc": "Starts Seal",
+        "desc_gfm": "<p>Starts Seal</p>\n",
+        "doc": "Starts Seal\n\nParameters:\n * None\n\nReturns:\n * The Seal object",
+        "doc_gfm": "<p>Starts Seal</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "214",
+        "name": "start",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * The Seal object"
+        ],
+        "returns_gfm": "<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "signature": "Seal:start()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:stop()",
+        "def_gfm": "Seal:stop()",
+        "desc": "Stops Seal",
+        "desc_gfm": "<p>Stops Seal</p>\n",
+        "doc": "Stops Seal\n\nParameters:\n * None\n\nReturns:\n * The Seal object\n\nNotes:\n * Some Seal plugins will continue performing background work even after this call (e.g. Spotlight searches)",
+        "doc_gfm": "<p>Stops Seal</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Seal object</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>Some Seal plugins will continue performing background work even after this call (e.g. Spotlight searches)</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "236",
+        "name": "stop",
+        "notes": [
+          " * Some Seal plugins will continue performing background work even after this call (e.g. Spotlight searches)"
+        ],
+        "notes_gfm": "<ul>\n<li>Some Seal plugins will continue performing background work even after this call (e.g. Spotlight searches)</li>\n</ul>\n",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * The Seal object"
+        ],
+        "returns_gfm": "<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "signature": "Seal:stop()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:toggle(query)",
+        "def_gfm": "Seal:toggle(query)",
+        "desc": "Shows or hides the Seal UI",
+        "desc_gfm": "<p>Shows or hides the Seal UI</p>\n",
+        "doc": "Shows or hides the Seal UI\n\nParameters:\n * query - An optional string to pre-populate the query box with\n\nReturns:\n * None",
+        "doc_gfm": "<p>Shows or hides the Seal UI</p>\n<p>Parameters:</p>\n<ul>\n<li>query - An optional string to pre-populate the query box with</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "287",
+        "name": "toggle",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * query - An optional string to pre-populate the query box with"
+        ],
+        "parameters_gfm": "<ul>\n<li>query - An optional string to pre-populate the query box with</li>\n</ul>\n",
+        "returns": [
+          " * None"
+        ],
+        "returns_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "signature": "Seal:toggle(query)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [
+      {
+        "def": "Seal.plugin_search_paths",
+        "def_gfm": "Seal.plugin_search_paths",
+        "desc": "List of directories where Seal will look for plugins. Defaults to `~/.hammerspoon/seal_plugins/` and the Seal Spoon directory.",
+        "desc_gfm": "<p>List of directories where Seal will look for plugins. Defaults to <code>~/.hammerspoon/seal_plugins/</code> and the Seal Spoon directory.</p>\n",
+        "doc": "List of directories where Seal will look for plugins. Defaults to `~/.hammerspoon/seal_plugins/` and the Seal Spoon directory.",
+        "doc_gfm": "<p>List of directories where Seal will look for plugins. Defaults to <code>~/.hammerspoon/seal_plugins/</code> and the Seal Spoon directory.</p>\n",
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "44",
+        "name": "plugin_search_paths",
+        "signature": "Seal.plugin_search_paths",
+        "stripped_doc": "",
+        "type": "Variable"
+      },
+      {
+        "def": "Seal.queryChangedTimerDuration",
+        "def_gfm": "Seal.queryChangedTimerDuration",
+        "desc": "Time between the last keystroke and the start of the recalculation of the choices to display, in seconds.",
+        "desc_gfm": "<p>Time between the last keystroke and the start of the recalculation of the choices to display, in seconds.</p>\n",
+        "doc": "Time between the last keystroke and the start of the recalculation of the choices to display, in seconds.\nDefaults to 0.02s (20ms).",
+        "doc_gfm": "<p>Time between the last keystroke and the start of the recalculation of the choices to display, in seconds.\nDefaults to 0.02s (20ms).</p>\n",
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "38",
+        "name": "queryChangedTimerDuration",
+        "signature": "Seal.queryChangedTimerDuration",
+        "stripped_doc": "Defaults to 0.02s (20ms).",
+        "type": "Variable"
+      }
+    ],
+    "desc": "Pluggable launch bar - Forked version",
+    "desc_gfm": "<p>Pluggable launch bar - Forked version</p>\n",
+    "doc": "Pluggable launch bar - Forked version\n\nThis is a fork of offical Seal plugin with very crude support for remembering\npreferred choices for queries\n\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/Seal.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/Seal.spoon.zip)\n\nSeal includes a number of plugins, which you can choose to load (see `:loadPlugins()` below):\n * apps : Launch applications by name\n * calc : Simple calculator\n * rot13 : Apply ROT13 substitution cipher\n * safari_bookmarks : Open Safari bookmarks (this is broken since at least High Sierra)\n * screencapture : Lets you take screenshots in various ways\n * urlformats : User defined URL formats to open\n * useractions : User defined custom actions\n * vpn : Connect and disconnect VPNs (currently supports Viscosity and macOS system preferences)A",
+    "doc_gfm": "<p>Pluggable launch bar - Forked version</p>\n<p>This is a fork of offical Seal plugin with very crude support for remembering\npreferred choices for queries</p>\n<p>Download: <a href=\"https://github.com/Hammerspoon/Spoons/raw/master/Spoons/Seal.spoon.zip\">https://github.com/Hammerspoon/Spoons/raw/master/Spoons/Seal.spoon.zip</a></p>\n<p>Seal includes a number of plugins, which you can choose to load (see <code>:loadPlugins()</code> below):</p>\n<ul>\n<li>apps : Launch applications by name</li>\n<li>calc : Simple calculator</li>\n<li>rot13 : Apply ROT13 substitution cipher</li>\n<li>safari_bookmarks : Open Safari bookmarks (this is broken since at least High Sierra)</li>\n<li>screencapture : Lets you take screenshots in various ways</li>\n<li>urlformats : User defined URL formats to open</li>\n<li>useractions : User defined custom actions</li>\n<li>vpn : Connect and disconnect VPNs (currently supports Viscosity and macOS system preferences)A</li>\n</ul>\n",
+    "items": [
+      {
+        "def": "Seal:bindHotkeys(mapping)",
+        "def_gfm": "Seal:bindHotkeys(mapping)",
+        "desc": "Binds hotkeys for Seal",
+        "desc_gfm": "<p>Binds hotkeys for Seal</p>\n",
+        "doc": "Binds hotkeys for Seal\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for the following (optional) items:\n  * show - This will cause Seal's UI to be shown\n  * toggle - This will cause Seal's UI to be shown or hidden depending on its current state\n\nReturns:\n * The Seal object",
+        "doc_gfm": "<p>Binds hotkeys for Seal</p>\n<p>Parameters:</p>\n<ul>\n<li>mapping - A table containing hotkey modifier/key details for the following (optional) items:</li>\n<li>show - This will cause Seal's UI to be shown</li>\n<li>toggle - This will cause Seal's UI to be shown or hidden depending on its current state</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "177",
+        "name": "bindHotkeys",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for the following (optional) items:\n   * show - This will cause Seal's UI to be shown\n   * toggle - This will cause Seal's UI to be shown or hidden depending on its current state"
+        ],
+        "parameters_gfm": "<ul>\n<li>mapping - A table containing hotkey modifier/key details for the following (optional) items:<ul>\n<li>show - This will cause Seal's UI to be shown</li>\n<li>toggle - This will cause Seal's UI to be shown or hidden depending on its current state</li>\n</ul>\n</li>\n</ul>\n",
+        "returns": [
+          " * The Seal object"
+        ],
+        "returns_gfm": "<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "signature": "Seal:bindHotkeys(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:loadPluginFromFile(plugin_name, file)",
+        "def_gfm": "Seal:loadPluginFromFile(plugin_name, file)",
+        "desc": "Loads a plugin from a given file",
+        "desc_gfm": "<p>Loads a plugin from a given file</p>\n",
+        "doc": "Loads a plugin from a given file\n\nParameters:\n * plugin_name - the name of the plugin, without \"seal_\" at the beginning or \".lua\" at the end\n * file - the file where the plugin code is stored.\n\nReturns:\n * The Seal object if the plugin was successfully loaded, `nil` otherwise\n\nNotes:\n * You should normally use `Seal:loadPlugins()`. This method allows you to load plugins\n   from non-standard locations and is mostly a development interface.\n * Some plugins may immediately begin doing background work (e.g. Spotlight searches)",
+        "doc_gfm": "<p>Loads a plugin from a given file</p>\n<p>Parameters:</p>\n<ul>\n<li>plugin_name - the name of the plugin, without &quot;seal_&quot; at the beginning or &quot;.lua&quot; at the end</li>\n<li>file - the file where the plugin code is stored.</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Seal object if the plugin was successfully loaded, <code>nil</code> otherwise</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>You should normally use <code>Seal:loadPlugins()</code>. This method allows you to load plugins\nfrom non-standard locations and is mostly a development interface.</li>\n<li>Some plugins may immediately begin doing background work (e.g. Spotlight searches)</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "112",
+        "name": "loadPluginFromFile",
+        "notes": [
+          " * You should normally use `Seal:loadPlugins()`. This method allows you to load plugins",
+          "   from non-standard locations and is mostly a development interface.",
+          " * Some plugins may immediately begin doing background work (e.g. Spotlight searches)"
+        ],
+        "notes_gfm": "<ul>\n<li>You should normally use <code>Seal:loadPlugins()</code>. This method allows you to load plugins\nfrom non-standard locations and is mostly a development interface.</li>\n<li>Some plugins may immediately begin doing background work (e.g. Spotlight searches)</li>\n</ul>\n",
+        "parameters": [
+          " * plugin_name - the name of the plugin, without \"seal_\" at the beginning or \".lua\" at the end",
+          " * file - the file where the plugin code is stored."
+        ],
+        "parameters_gfm": "<ul>\n<li>plugin_name - the name of the plugin, without &quot;seal_&quot; at the beginning or &quot;.lua&quot; at the end</li>\n<li>file - the file where the plugin code is stored.</li>\n</ul>\n",
+        "returns": [
+          " * The Seal object if the plugin was successfully loaded, `nil` otherwise"
+        ],
+        "returns_gfm": "<ul>\n<li>The Seal object if the plugin was successfully loaded, <code>nil</code> otherwise</li>\n</ul>\n",
+        "signature": "Seal:loadPluginFromFile(plugin_name, file)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:loadPlugins(plugins)",
+        "def_gfm": "Seal:loadPlugins(plugins)",
+        "desc": "Loads a list of Seal plugins",
+        "desc_gfm": "<p>Loads a list of Seal plugins</p>\n",
+        "doc": "Loads a list of Seal plugins\n\nParameters:\n * plugins - A list containing the names of plugins to load\n\nReturns:\n * The Seal object\n\nNotes:\n * The plugins live inside the Seal.spoon directory\n * The plugin names in the list, should not have `seal_` at the start, or `.lua` at the end\n * Some plugins may immediately begin doing background work (e.g. Spotlight searches)",
+        "doc_gfm": "<p>Loads a list of Seal plugins</p>\n<p>Parameters:</p>\n<ul>\n<li>plugins - A list containing the names of plugins to load</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Seal object</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>The plugins live inside the Seal.spoon directory</li>\n<li>The plugin names in the list, should not have <code>seal_</code> at the start, or <code>.lua</code> at the end</li>\n<li>Some plugins may immediately begin doing background work (e.g. Spotlight searches)</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "140",
+        "name": "loadPlugins",
+        "notes": [
+          " * The plugins live inside the Seal.spoon directory",
+          " * The plugin names in the list, should not have `seal_` at the start, or `.lua` at the end",
+          " * Some plugins may immediately begin doing background work (e.g. Spotlight searches)"
+        ],
+        "notes_gfm": "<ul>\n<li>The plugins live inside the Seal.spoon directory</li>\n<li>The plugin names in the list, should not have <code>seal_</code> at the start, or <code>.lua</code> at the end</li>\n<li>Some plugins may immediately begin doing background work (e.g. Spotlight searches)</li>\n</ul>\n",
+        "parameters": [
+          " * plugins - A list containing the names of plugins to load"
+        ],
+        "parameters_gfm": "<ul>\n<li>plugins - A list containing the names of plugins to load</li>\n</ul>\n",
+        "returns": [
+          " * The Seal object"
+        ],
+        "returns_gfm": "<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "signature": "Seal:loadPlugins(plugins)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal.plugin_search_paths",
+        "def_gfm": "Seal.plugin_search_paths",
+        "desc": "List of directories where Seal will look for plugins. Defaults to `~/.hammerspoon/seal_plugins/` and the Seal Spoon directory.",
+        "desc_gfm": "<p>List of directories where Seal will look for plugins. Defaults to <code>~/.hammerspoon/seal_plugins/</code> and the Seal Spoon directory.</p>\n",
+        "doc": "List of directories where Seal will look for plugins. Defaults to `~/.hammerspoon/seal_plugins/` and the Seal Spoon directory.",
+        "doc_gfm": "<p>List of directories where Seal will look for plugins. Defaults to <code>~/.hammerspoon/seal_plugins/</code> and the Seal Spoon directory.</p>\n",
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "44",
+        "name": "plugin_search_paths",
+        "signature": "Seal.plugin_search_paths",
+        "stripped_doc": "",
+        "type": "Variable"
+      },
+      {
+        "def": "Seal.queryChangedTimerDuration",
+        "def_gfm": "Seal.queryChangedTimerDuration",
+        "desc": "Time between the last keystroke and the start of the recalculation of the choices to display, in seconds.",
+        "desc_gfm": "<p>Time between the last keystroke and the start of the recalculation of the choices to display, in seconds.</p>\n",
+        "doc": "Time between the last keystroke and the start of the recalculation of the choices to display, in seconds.\nDefaults to 0.02s (20ms).",
+        "doc_gfm": "<p>Time between the last keystroke and the start of the recalculation of the choices to display, in seconds.\nDefaults to 0.02s (20ms).</p>\n",
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "38",
+        "name": "queryChangedTimerDuration",
+        "signature": "Seal.queryChangedTimerDuration",
+        "stripped_doc": "Defaults to 0.02s (20ms).",
+        "type": "Variable"
+      },
+      {
+        "def": "Seal:refreshAllCommands()",
+        "def_gfm": "Seal:refreshAllCommands()",
+        "desc": "Refresh the list of commands provided by all the currently loaded plugins.",
+        "desc_gfm": "<p>Refresh the list of commands provided by all the currently loaded plugins.</p>\n",
+        "doc": "Refresh the list of commands provided by all the currently loaded plugins.\n\nParameters:\n * None\n\nReturns:\n * The Seal object\n\nNotes:\n * Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands.",
+        "doc_gfm": "<p>Refresh the list of commands provided by all the currently loaded plugins.</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Seal object</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands.</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "93",
+        "name": "refreshAllCommands",
+        "notes": [
+          " * Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands."
+        ],
+        "notes_gfm": "<ul>\n<li>Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands.</li>\n</ul>\n",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * The Seal object"
+        ],
+        "returns_gfm": "<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "signature": "Seal:refreshAllCommands()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:refreshCommandsForPlugin(plugin_name)",
+        "def_gfm": "Seal:refreshCommandsForPlugin(plugin_name)",
+        "desc": "Refresh the list of commands provided by the given plugin.",
+        "desc_gfm": "<p>Refresh the list of commands provided by the given plugin.</p>\n",
+        "doc": "Refresh the list of commands provided by the given plugin.\n\nParameters:\n * plugin_name - the name of the plugin. Should be the name as passed to `loadPlugins()` or `loadPluginFromFile`.\n\nReturns:\n * The Seal object\n\nNotes:\n * Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands.",
+        "doc_gfm": "<p>Refresh the list of commands provided by the given plugin.</p>\n<p>Parameters:</p>\n<ul>\n<li>plugin_name - the name of the plugin. Should be the name as passed to <code>loadPlugins()</code> or <code>loadPluginFromFile</code>.</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Seal object</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands.</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "68",
+        "name": "refreshCommandsForPlugin",
+        "notes": [
+          " * Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands."
+        ],
+        "notes_gfm": "<ul>\n<li>Most Seal plugins expose a static list of commands (if any), which are registered at the time the plugin is loaded. This method is used for plugins which expose a dynamic or changing (e.g. depending on configuration) list of commands.</li>\n</ul>\n",
+        "parameters": [
+          " * plugin_name - the name of the plugin. Should be the name as passed to `loadPlugins()` or `loadPluginFromFile`."
+        ],
+        "parameters_gfm": "<ul>\n<li>plugin_name - the name of the plugin. Should be the name as passed to <code>loadPlugins()</code> or <code>loadPluginFromFile</code>.</li>\n</ul>\n",
+        "returns": [
+          " * The Seal object"
+        ],
+        "returns_gfm": "<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "signature": "Seal:refreshCommandsForPlugin(plugin_name)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:show(query)",
+        "def_gfm": "Seal:show(query)",
+        "desc": "Shows the Seal UI",
+        "desc_gfm": "<p>Shows the Seal UI</p>\n",
+        "doc": "Shows the Seal UI\n\nParameters:\n * query - An optional string to pre-populate the query box with\n\nReturns:\n * None\n\nNotes:\n * This may be useful if you wish to show Seal in response to something other than its hotkey",
+        "doc_gfm": "<p>Shows the Seal UI</p>\n<p>Parameters:</p>\n<ul>\n<li>query - An optional string to pre-populate the query box with</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>This may be useful if you wish to show Seal in response to something other than its hotkey</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "262",
+        "name": "show",
+        "notes": [
+          " * This may be useful if you wish to show Seal in response to something other than its hotkey"
+        ],
+        "notes_gfm": "<ul>\n<li>This may be useful if you wish to show Seal in response to something other than its hotkey</li>\n</ul>\n",
+        "parameters": [
+          " * query - An optional string to pre-populate the query box with"
+        ],
+        "parameters_gfm": "<ul>\n<li>query - An optional string to pre-populate the query box with</li>\n</ul>\n",
+        "returns": [
+          " * None"
+        ],
+        "returns_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "signature": "Seal:show(query)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:start()",
+        "def_gfm": "Seal:start()",
+        "desc": "Starts Seal",
+        "desc_gfm": "<p>Starts Seal</p>\n",
+        "doc": "Starts Seal\n\nParameters:\n * None\n\nReturns:\n * The Seal object",
+        "doc_gfm": "<p>Starts Seal</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "214",
+        "name": "start",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * The Seal object"
+        ],
+        "returns_gfm": "<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "signature": "Seal:start()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:stop()",
+        "def_gfm": "Seal:stop()",
+        "desc": "Stops Seal",
+        "desc_gfm": "<p>Stops Seal</p>\n",
+        "doc": "Stops Seal\n\nParameters:\n * None\n\nReturns:\n * The Seal object\n\nNotes:\n * Some Seal plugins will continue performing background work even after this call (e.g. Spotlight searches)",
+        "doc_gfm": "<p>Stops Seal</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Seal object</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>Some Seal plugins will continue performing background work even after this call (e.g. Spotlight searches)</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "236",
+        "name": "stop",
+        "notes": [
+          " * Some Seal plugins will continue performing background work even after this call (e.g. Spotlight searches)"
+        ],
+        "notes_gfm": "<ul>\n<li>Some Seal plugins will continue performing background work even after this call (e.g. Spotlight searches)</li>\n</ul>\n",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * The Seal object"
+        ],
+        "returns_gfm": "<ul>\n<li>The Seal object</li>\n</ul>\n",
+        "signature": "Seal:stop()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal:toggle(query)",
+        "def_gfm": "Seal:toggle(query)",
+        "desc": "Shows or hides the Seal UI",
+        "desc_gfm": "<p>Shows or hides the Seal UI</p>\n",
+        "doc": "Shows or hides the Seal UI\n\nParameters:\n * query - An optional string to pre-populate the query box with\n\nReturns:\n * None",
+        "doc_gfm": "<p>Shows or hides the Seal UI</p>\n<p>Parameters:</p>\n<ul>\n<li>query - An optional string to pre-populate the query box with</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/init.lua",
+        "lineno": "287",
+        "name": "toggle",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * query - An optional string to pre-populate the query box with"
+        ],
+        "parameters_gfm": "<ul>\n<li>query - An optional string to pre-populate the query box with</li>\n</ul>\n",
+        "returns": [
+          " * None"
+        ],
+        "returns_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "signature": "Seal:toggle(query)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "Seal",
+    "stripped_doc": "\nThis is a fork of offical Seal plugin with very crude support for remembering\npreferred choices for queries\n\nDownload: [https://github.com/Hammerspoon/Spoons/raw/master/Spoons/Seal.spoon.zip](https://github.com/Hammerspoon/Spoons/raw/master/Spoons/Seal.spoon.zip)\n\nSeal includes a number of plugins, which you can choose to load (see `:loadPlugins()` below):\n * apps : Launch applications by name\n * calc : Simple calculator\n * rot13 : Apply ROT13 substitution cipher\n * safari_bookmarks : Open Safari bookmarks (this is broken since at least High Sierra)\n * screencapture : Lets you take screenshots in various ways\n * urlformats : User defined URL formats to open\n * useractions : User defined custom actions\n * vpn : Connect and disconnect VPNs (currently supports Viscosity and macOS system preferences)A",
+    "submodules": [
+      "plugins"
+    ],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [],
+    "Variable": [],
+    "desc": "Various APIs for Seal plugins",
+    "desc_gfm": "<p>Various APIs for Seal plugins</p>\n",
+    "doc": "Various APIs for Seal plugins",
+    "doc_gfm": "<p>Various APIs for Seal plugins</p>\n",
+    "items": [],
+    "name": "Seal.plugins",
+    "stripped_doc": "",
+    "submodules": [
+      "apps",
+      "pasteboard",
+      "safari_bookmarks",
+      "screencapture",
+      "urlformats",
+      "useractions"
+    ],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "Seal.plugins.apps:restart()",
+        "def_gfm": "Seal.plugins.apps:restart()",
+        "desc": "Restarts the Spotlight app searcher",
+        "desc_gfm": "<p>Restarts the Spotlight app searcher</p>\n",
+        "doc": "Restarts the Spotlight app searcher\n\nParameters:\n * None\n\nReturns:\n * None",
+        "doc_gfm": "<p>Restarts the Spotlight app searcher</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/seal_apps.lua",
+        "lineno": "137",
+        "name": "restart",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * None"
+        ],
+        "returns_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "signature": "Seal.plugins.apps:restart()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal.plugins.apps:start()",
+        "def_gfm": "Seal.plugins.apps:start()",
+        "desc": "Starts the Spotlight app searcher",
+        "desc_gfm": "<p>Starts the Spotlight app searcher</p>\n",
+        "doc": "Starts the Spotlight app searcher\n\nParameters:\n * None\n\nReturns:\n * None\n\nNotes:\n * This is called automatically when the plugin is loaded",
+        "doc_gfm": "<p>Starts the Spotlight app searcher</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>This is called automatically when the plugin is loaded</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/seal_apps.lua",
+        "lineno": "104",
+        "name": "start",
+        "notes": [
+          " * This is called automatically when the plugin is loaded"
+        ],
+        "notes_gfm": "<ul>\n<li>This is called automatically when the plugin is loaded</li>\n</ul>\n",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * None"
+        ],
+        "returns_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "signature": "Seal.plugins.apps:start()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal.plugins.apps:stop()",
+        "def_gfm": "Seal.plugins.apps:stop()",
+        "desc": "Stops the Spotlight app searcher",
+        "desc_gfm": "<p>Stops the Spotlight app searcher</p>\n",
+        "doc": "Stops the Spotlight app searcher\n\nParameters:\n * None\n\nReturns:\n * None",
+        "doc_gfm": "<p>Stops the Spotlight app searcher</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/seal_apps.lua",
+        "lineno": "122",
+        "name": "stop",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * None"
+        ],
+        "returns_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "signature": "Seal.plugins.apps:stop()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [
+      {
+        "def": "Seal.plugins.apps.appSearchPaths",
+        "def_gfm": "Seal.plugins.apps.appSearchPaths",
+        "desc": "Table containing the paths to search for launchable items",
+        "desc_gfm": "<p>Table containing the paths to search for launchable items</p>\n",
+        "doc": "Table containing the paths to search for launchable items\n\nNotes:\n * If you change this, you will need to call `spoon.Seal.plugins.apps:restart()` to force Spotlight to search for new items.",
+        "doc_gfm": "<p>Table containing the paths to search for launchable items</p>\n<p>Notes:</p>\n<ul>\n<li>If you change this, you will need to call <code>spoon.Seal.plugins.apps:restart()</code> to force Spotlight to search for new items.</li>\n</ul>\n",
+        "file": "Source/Seal.spoon/seal_apps.lua",
+        "lineno": "9",
+        "name": "appSearchPaths",
+        "notes": [
+          " * If you change this, you will need to call `spoon.Seal.plugins.apps:restart()` to force Spotlight to search for new items."
+        ],
+        "notes_gfm": "<ul>\n<li>If you change this, you will need to call <code>spoon.Seal.plugins.apps:restart()</code> to force Spotlight to search for new items.</li>\n</ul>\n",
+        "signature": "Seal.plugins.apps.appSearchPaths",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "desc": "A plugin to add launchable apps/scripts, making Seal act as a launch bar",
+    "desc_gfm": "<p>A plugin to add launchable apps/scripts, making Seal act as a launch bar</p>\n",
+    "doc": "A plugin to add launchable apps/scripts, making Seal act as a launch bar",
+    "doc_gfm": "<p>A plugin to add launchable apps/scripts, making Seal act as a launch bar</p>\n",
+    "items": [
+      {
+        "def": "Seal.plugins.apps.appSearchPaths",
+        "def_gfm": "Seal.plugins.apps.appSearchPaths",
+        "desc": "Table containing the paths to search for launchable items",
+        "desc_gfm": "<p>Table containing the paths to search for launchable items</p>\n",
+        "doc": "Table containing the paths to search for launchable items\n\nNotes:\n * If you change this, you will need to call `spoon.Seal.plugins.apps:restart()` to force Spotlight to search for new items.",
+        "doc_gfm": "<p>Table containing the paths to search for launchable items</p>\n<p>Notes:</p>\n<ul>\n<li>If you change this, you will need to call <code>spoon.Seal.plugins.apps:restart()</code> to force Spotlight to search for new items.</li>\n</ul>\n",
+        "file": "Source/Seal.spoon/seal_apps.lua",
+        "lineno": "9",
+        "name": "appSearchPaths",
+        "notes": [
+          " * If you change this, you will need to call `spoon.Seal.plugins.apps:restart()` to force Spotlight to search for new items."
+        ],
+        "notes_gfm": "<ul>\n<li>If you change this, you will need to call <code>spoon.Seal.plugins.apps:restart()</code> to force Spotlight to search for new items.</li>\n</ul>\n",
+        "signature": "Seal.plugins.apps.appSearchPaths",
+        "stripped_doc": "",
+        "type": "Variable"
+      },
+      {
+        "def": "Seal.plugins.apps:restart()",
+        "def_gfm": "Seal.plugins.apps:restart()",
+        "desc": "Restarts the Spotlight app searcher",
+        "desc_gfm": "<p>Restarts the Spotlight app searcher</p>\n",
+        "doc": "Restarts the Spotlight app searcher\n\nParameters:\n * None\n\nReturns:\n * None",
+        "doc_gfm": "<p>Restarts the Spotlight app searcher</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/seal_apps.lua",
+        "lineno": "137",
+        "name": "restart",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * None"
+        ],
+        "returns_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "signature": "Seal.plugins.apps:restart()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal.plugins.apps:start()",
+        "def_gfm": "Seal.plugins.apps:start()",
+        "desc": "Starts the Spotlight app searcher",
+        "desc_gfm": "<p>Starts the Spotlight app searcher</p>\n",
+        "doc": "Starts the Spotlight app searcher\n\nParameters:\n * None\n\nReturns:\n * None\n\nNotes:\n * This is called automatically when the plugin is loaded",
+        "doc_gfm": "<p>Starts the Spotlight app searcher</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>This is called automatically when the plugin is loaded</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/seal_apps.lua",
+        "lineno": "104",
+        "name": "start",
+        "notes": [
+          " * This is called automatically when the plugin is loaded"
+        ],
+        "notes_gfm": "<ul>\n<li>This is called automatically when the plugin is loaded</li>\n</ul>\n",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * None"
+        ],
+        "returns_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "signature": "Seal.plugins.apps:start()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Seal.plugins.apps:stop()",
+        "def_gfm": "Seal.plugins.apps:stop()",
+        "desc": "Stops the Spotlight app searcher",
+        "desc_gfm": "<p>Stops the Spotlight app searcher</p>\n",
+        "doc": "Stops the Spotlight app searcher\n\nParameters:\n * None\n\nReturns:\n * None",
+        "doc_gfm": "<p>Stops the Spotlight app searcher</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/seal_apps.lua",
+        "lineno": "122",
+        "name": "stop",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * None"
+        ],
+        "returns_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "signature": "Seal.plugins.apps:stop()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "Seal.plugins.apps",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [],
+    "Variable": [
+      {
+        "def": "Seal.plugins.pasteboard.historySize",
+        "def_gfm": "Seal.plugins.pasteboard.historySize",
+        "desc": "",
+        "desc_gfm": "",
+        "doc": "\nThe number of history items to keep. Defaults to 50",
+        "doc_gfm": "<p>The number of history items to keep. Defaults to 50</p>\n",
+        "file": "Source/Seal.spoon/seal_pasteboard.lua",
+        "lineno": "11",
+        "name": "historySize",
+        "signature": "Seal.plugins.pasteboard.historySize",
+        "stripped_doc": "The number of history items to keep. Defaults to 50",
+        "type": "Variable"
+      },
+      {
+        "def": "Seal.plugins.pasteboard.saveHistory",
+        "def_gfm": "Seal.plugins.pasteboard.saveHistory",
+        "desc": "",
+        "desc_gfm": "",
+        "doc": "\nA boolean, true if Seal should automatically load/save clipboard history. Defaults to true",
+        "doc_gfm": "<p>A boolean, true if Seal should automatically load/save clipboard history. Defaults to true</p>\n",
+        "file": "Source/Seal.spoon/seal_pasteboard.lua",
+        "lineno": "17",
+        "name": "saveHistory",
+        "signature": "Seal.plugins.pasteboard.saveHistory",
+        "stripped_doc": "A boolean, true if Seal should automatically load/save clipboard history. Defaults to true",
+        "type": "Variable"
+      }
+    ],
+    "desc": "Visual, searchable pasteboard (ie clipboard) history",
+    "desc_gfm": "<p>Visual, searchable pasteboard (ie clipboard) history</p>\n",
+    "doc": "Visual, searchable pasteboard (ie clipboard) history",
+    "doc_gfm": "<p>Visual, searchable pasteboard (ie clipboard) history</p>\n",
+    "items": [
+      {
+        "def": "Seal.plugins.pasteboard.historySize",
+        "def_gfm": "Seal.plugins.pasteboard.historySize",
+        "desc": "",
+        "desc_gfm": "",
+        "doc": "\nThe number of history items to keep. Defaults to 50",
+        "doc_gfm": "<p>The number of history items to keep. Defaults to 50</p>\n",
+        "file": "Source/Seal.spoon/seal_pasteboard.lua",
+        "lineno": "11",
+        "name": "historySize",
+        "signature": "Seal.plugins.pasteboard.historySize",
+        "stripped_doc": "The number of history items to keep. Defaults to 50",
+        "type": "Variable"
+      },
+      {
+        "def": "Seal.plugins.pasteboard.saveHistory",
+        "def_gfm": "Seal.plugins.pasteboard.saveHistory",
+        "desc": "",
+        "desc_gfm": "",
+        "doc": "\nA boolean, true if Seal should automatically load/save clipboard history. Defaults to true",
+        "doc_gfm": "<p>A boolean, true if Seal should automatically load/save clipboard history. Defaults to true</p>\n",
+        "file": "Source/Seal.spoon/seal_pasteboard.lua",
+        "lineno": "17",
+        "name": "saveHistory",
+        "signature": "Seal.plugins.pasteboard.saveHistory",
+        "stripped_doc": "A boolean, true if Seal should automatically load/save clipboard history. Defaults to true",
+        "type": "Variable"
+      }
+    ],
+    "name": "Seal.plugins.pasteboard",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [],
+    "Variable": [
+      {
+        "def": "Seal.plugins.safari_bookmarks.always_open_with_safari",
+        "def_gfm": "Seal.plugins.safari_bookmarks.always_open_with_safari",
+        "desc": "If `true` (default), bookmarks are always opened with Safari, otherwise they are opened with the default application using the `/usr/bin/open` command.",
+        "desc_gfm": "<p>If <code>true</code> (default), bookmarks are always opened with Safari, otherwise they are opened with the default application using the <code>/usr/bin/open</code> command.</p>\n",
+        "doc": "If `true` (default), bookmarks are always opened with Safari, otherwise they are opened with the default application using the `/usr/bin/open` command.",
+        "doc_gfm": "<p>If <code>true</code> (default), bookmarks are always opened with Safari, otherwise they are opened with the default application using the <code>/usr/bin/open</code> command.</p>\n",
+        "file": "Source/Seal.spoon/seal_safari_bookmarks.lua",
+        "lineno": "11",
+        "name": "always_open_with_safari",
+        "signature": "Seal.plugins.safari_bookmarks.always_open_with_safari",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "desc": "",
+    "desc_gfm": "",
+    "doc": "\nNote: Apple has changed the way Safari stores bookmarks and this plugin no longer works on recent macOS releases.",
+    "doc_gfm": "<p>Note: Apple has changed the way Safari stores bookmarks and this plugin no longer works on recent macOS releases.</p>\n",
+    "items": [
+      {
+        "def": "Seal.plugins.safari_bookmarks.always_open_with_safari",
+        "def_gfm": "Seal.plugins.safari_bookmarks.always_open_with_safari",
+        "desc": "If `true` (default), bookmarks are always opened with Safari, otherwise they are opened with the default application using the `/usr/bin/open` command.",
+        "desc_gfm": "<p>If <code>true</code> (default), bookmarks are always opened with Safari, otherwise they are opened with the default application using the <code>/usr/bin/open</code> command.</p>\n",
+        "doc": "If `true` (default), bookmarks are always opened with Safari, otherwise they are opened with the default application using the `/usr/bin/open` command.",
+        "doc_gfm": "<p>If <code>true</code> (default), bookmarks are always opened with Safari, otherwise they are opened with the default application using the <code>/usr/bin/open</code> command.</p>\n",
+        "file": "Source/Seal.spoon/seal_safari_bookmarks.lua",
+        "lineno": "11",
+        "name": "always_open_with_safari",
+        "signature": "Seal.plugins.safari_bookmarks.always_open_with_safari",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "name": "Seal.plugins.safari_bookmarks",
+    "stripped_doc": "Note: Apple has changed the way Safari stores bookmarks and this plugin no longer works on recent macOS releases.",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [],
+    "Variable": [
+      {
+        "def": "Seal.plugins.screencapture.showPostUI",
+        "def_gfm": "Seal.plugins.screencapture.showPostUI",
+        "desc": "Whether or not to show the screen capture UI in macOS 10.14 or later",
+        "desc_gfm": "<p>Whether or not to show the screen capture UI in macOS 10.14 or later</p>\n",
+        "doc": "Whether or not to show the screen capture UI in macOS 10.14 or later",
+        "doc_gfm": "<p>Whether or not to show the screen capture UI in macOS 10.14 or later</p>\n",
+        "file": "Source/Seal.spoon/seal_screencapture.lua",
+        "lineno": "8",
+        "name": "showPostUI",
+        "signature": "Seal.plugins.screencapture.showPostUI",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "desc": "A plugin to capture the screen in various ways",
+    "desc_gfm": "<p>A plugin to capture the screen in various ways</p>\n",
+    "doc": "A plugin to capture the screen in various ways",
+    "doc_gfm": "<p>A plugin to capture the screen in various ways</p>\n",
+    "items": [
+      {
+        "def": "Seal.plugins.screencapture.showPostUI",
+        "def_gfm": "Seal.plugins.screencapture.showPostUI",
+        "desc": "Whether or not to show the screen capture UI in macOS 10.14 or later",
+        "desc_gfm": "<p>Whether or not to show the screen capture UI in macOS 10.14 or later</p>\n",
+        "doc": "Whether or not to show the screen capture UI in macOS 10.14 or later",
+        "doc_gfm": "<p>Whether or not to show the screen capture UI in macOS 10.14 or later</p>\n",
+        "file": "Source/Seal.spoon/seal_screencapture.lua",
+        "lineno": "8",
+        "name": "showPostUI",
+        "signature": "Seal.plugins.screencapture.showPostUI",
+        "stripped_doc": "",
+        "type": "Variable"
+      }
+    ],
+    "name": "Seal.plugins.screencapture",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "Seal.plugins.urlformats:providersTable(aTable)",
+        "def_gfm": "Seal.plugins.urlformats:providersTable(aTable)",
+        "desc": "Gets or sets the current providers table",
+        "desc_gfm": "<p>Gets or sets the current providers table</p>\n",
+        "doc": "Gets or sets the current providers table\n\nParameters:\n * aTable - An optional table of providers, which must contain the following keys:\n   * name - A string naming the provider, which will be shown in the Seal results\n   * url - A string containing the URL to insert the user's query into. This should contain one and only one `%s`\n\nReturns:\n * Either a table of current providers, if no parameter was passed, or nothing if a parmameter was passed.\n\nNotes:\n * An example table might look like:\n```lua\n{\n  rhbz = { name = \"Red Hat Bugzilla\", url = \"https://bugzilla.redhat.com/show_bug.cgi?id=%s\", },\n  lp = { name = \"Launchpad Bug\", url = \"https://launchpad.net/bugs/%s\", },\n}\n```",
+        "doc_gfm": "<p>Gets or sets the current providers table</p>\n<p>Parameters:</p>\n<ul>\n<li>aTable - An optional table of providers, which must contain the following keys:<ul>\n<li>name - A string naming the provider, which will be shown in the Seal results</li>\n<li>url - A string containing the URL to insert the user's query into. This should contain one and only one <code>%s</code></li>\n</ul>\n</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>Either a table of current providers, if no parameter was passed, or nothing if a parmameter was passed.</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>An example table might look like:</li>\n</ul>\n<div class=\"highlight\"><pre><span></span><span class=\"p\">{</span>\n  <span class=\"n\">rhbz</span> <span class=\"o\">=</span> <span class=\"p\">{</span> <span class=\"n\">name</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;Red Hat Bugzilla&quot;</span><span class=\"p\">,</span> <span class=\"n\">url</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;https://bugzilla.redhat.com/show_bug.cgi?id=%s&quot;</span><span class=\"p\">,</span> <span class=\"p\">},</span>\n  <span class=\"n\">lp</span> <span class=\"o\">=</span> <span class=\"p\">{</span> <span class=\"n\">name</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;Launchpad Bug&quot;</span><span class=\"p\">,</span> <span class=\"n\">url</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;https://launchpad.net/bugs/%s&quot;</span><span class=\"p\">,</span> <span class=\"p\">},</span>\n<span class=\"p\">}</span>\n</pre></div>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/seal_urlformats.lua",
+        "lineno": "97",
+        "name": "providersTable",
+        "notes": [
+          " * An example table might look like:",
+          "```lua",
+          "{",
+          "  rhbz = { name = \"Red Hat Bugzilla\", url = \"https://bugzilla.redhat.com/show_bug.cgi?id=%s\", },",
+          "  lp = { name = \"Launchpad Bug\", url = \"https://launchpad.net/bugs/%s\", },",
+          "}",
+          "```"
+        ],
+        "notes_gfm": "<ul>\n<li>An example table might look like:</li>\n</ul>\n<div class=\"highlight\"><pre><span></span><span class=\"p\">{</span>\n  <span class=\"n\">rhbz</span> <span class=\"o\">=</span> <span class=\"p\">{</span> <span class=\"n\">name</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;Red Hat Bugzilla&quot;</span><span class=\"p\">,</span> <span class=\"n\">url</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;https://bugzilla.redhat.com/show_bug.cgi?id=%s&quot;</span><span class=\"p\">,</span> <span class=\"p\">},</span>\n  <span class=\"n\">lp</span> <span class=\"o\">=</span> <span class=\"p\">{</span> <span class=\"n\">name</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;Launchpad Bug&quot;</span><span class=\"p\">,</span> <span class=\"n\">url</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;https://launchpad.net/bugs/%s&quot;</span><span class=\"p\">,</span> <span class=\"p\">},</span>\n<span class=\"p\">}</span>\n</pre></div>\n",
+        "parameters": [
+          " * aTable - An optional table of providers, which must contain the following keys:\n   * name - A string naming the provider, which will be shown in the Seal results\n   * url - A string containing the URL to insert the user's query into. This should contain one and only one `%s`"
+        ],
+        "parameters_gfm": "<ul>\n<li>aTable - An optional table of providers, which must contain the following keys:<ul>\n<li>name - A string naming the provider, which will be shown in the Seal results</li>\n<li>url - A string containing the URL to insert the user's query into. This should contain one and only one <code>%s</code></li>\n</ul>\n</li>\n</ul>\n",
+        "returns": [
+          " * Either a table of current providers, if no parameter was passed, or nothing if a parmameter was passed."
+        ],
+        "returns_gfm": "<ul>\n<li>Either a table of current providers, if no parameter was passed, or nothing if a parmameter was passed.</li>\n</ul>\n",
+        "signature": "Seal.plugins.urlformats:providersTable(aTable)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "A plugin to quickly open URLs containing a search/query term",
+    "desc_gfm": "<p>A plugin to quickly open URLs containing a search/query term</p>\n",
+    "doc": "A plugin to quickly open URLs containing a search/query term\nThis plugin is invoked with the `uf` keyword and requires some configuration, see `:providersTable()`\n\nThe way this works is by defining a set of providers, each of which contains a URL with a `%s` somewhere insert it.\nWhen the user types `uf` in Seal, followed by some more characters, those characters will be inserted into the string at the point where the `%s` is.\n\nBy way of an example, you could define a provider with a url like `http://bugs.mycorp.com/showBug?id=%s`, and just need to type `uf 123456` in Seal to get a quick shortcut to open the full URL.",
+    "doc_gfm": "<p>A plugin to quickly open URLs containing a search/query term\nThis plugin is invoked with the <code>uf</code> keyword and requires some configuration, see <code>:providersTable()</code></p>\n<p>The way this works is by defining a set of providers, each of which contains a URL with a <code>%s</code> somewhere insert it.\nWhen the user types <code>uf</code> in Seal, followed by some more characters, those characters will be inserted into the string at the point where the <code>%s</code> is.</p>\n<p>By way of an example, you could define a provider with a url like <code>http://bugs.mycorp.com/showBug?id=%s</code>, and just need to type <code>uf 123456</code> in Seal to get a quick shortcut to open the full URL.</p>\n",
+    "items": [
+      {
+        "def": "Seal.plugins.urlformats:providersTable(aTable)",
+        "def_gfm": "Seal.plugins.urlformats:providersTable(aTable)",
+        "desc": "Gets or sets the current providers table",
+        "desc_gfm": "<p>Gets or sets the current providers table</p>\n",
+        "doc": "Gets or sets the current providers table\n\nParameters:\n * aTable - An optional table of providers, which must contain the following keys:\n   * name - A string naming the provider, which will be shown in the Seal results\n   * url - A string containing the URL to insert the user's query into. This should contain one and only one `%s`\n\nReturns:\n * Either a table of current providers, if no parameter was passed, or nothing if a parmameter was passed.\n\nNotes:\n * An example table might look like:\n```lua\n{\n  rhbz = { name = \"Red Hat Bugzilla\", url = \"https://bugzilla.redhat.com/show_bug.cgi?id=%s\", },\n  lp = { name = \"Launchpad Bug\", url = \"https://launchpad.net/bugs/%s\", },\n}\n```",
+        "doc_gfm": "<p>Gets or sets the current providers table</p>\n<p>Parameters:</p>\n<ul>\n<li>aTable - An optional table of providers, which must contain the following keys:<ul>\n<li>name - A string naming the provider, which will be shown in the Seal results</li>\n<li>url - A string containing the URL to insert the user's query into. This should contain one and only one <code>%s</code></li>\n</ul>\n</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>Either a table of current providers, if no parameter was passed, or nothing if a parmameter was passed.</li>\n</ul>\n<p>Notes:</p>\n<ul>\n<li>An example table might look like:</li>\n</ul>\n<div class=\"highlight\"><pre><span></span><span class=\"p\">{</span>\n  <span class=\"n\">rhbz</span> <span class=\"o\">=</span> <span class=\"p\">{</span> <span class=\"n\">name</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;Red Hat Bugzilla&quot;</span><span class=\"p\">,</span> <span class=\"n\">url</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;https://bugzilla.redhat.com/show_bug.cgi?id=%s&quot;</span><span class=\"p\">,</span> <span class=\"p\">},</span>\n  <span class=\"n\">lp</span> <span class=\"o\">=</span> <span class=\"p\">{</span> <span class=\"n\">name</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;Launchpad Bug&quot;</span><span class=\"p\">,</span> <span class=\"n\">url</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;https://launchpad.net/bugs/%s&quot;</span><span class=\"p\">,</span> <span class=\"p\">},</span>\n<span class=\"p\">}</span>\n</pre></div>\n",
+        "examples": [],
+        "file": "Source/Seal.spoon/seal_urlformats.lua",
+        "lineno": "97",
+        "name": "providersTable",
+        "notes": [
+          " * An example table might look like:",
+          "```lua",
+          "{",
+          "  rhbz = { name = \"Red Hat Bugzilla\", url = \"https://bugzilla.redhat.com/show_bug.cgi?id=%s\", },",
+          "  lp = { name = \"Launchpad Bug\", url = \"https://launchpad.net/bugs/%s\", },",
+          "}",
+          "```"
+        ],
+        "notes_gfm": "<ul>\n<li>An example table might look like:</li>\n</ul>\n<div class=\"highlight\"><pre><span></span><span class=\"p\">{</span>\n  <span class=\"n\">rhbz</span> <span class=\"o\">=</span> <span class=\"p\">{</span> <span class=\"n\">name</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;Red Hat Bugzilla&quot;</span><span class=\"p\">,</span> <span class=\"n\">url</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;https://bugzilla.redhat.com/show_bug.cgi?id=%s&quot;</span><span class=\"p\">,</span> <span class=\"p\">},</span>\n  <span class=\"n\">lp</span> <span class=\"o\">=</span> <span class=\"p\">{</span> <span class=\"n\">name</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;Launchpad Bug&quot;</span><span class=\"p\">,</span> <span class=\"n\">url</span> <span class=\"o\">=</span> <span class=\"s2\">&quot;https://launchpad.net/bugs/%s&quot;</span><span class=\"p\">,</span> <span class=\"p\">},</span>\n<span class=\"p\">}</span>\n</pre></div>\n",
+        "parameters": [
+          " * aTable - An optional table of providers, which must contain the following keys:\n   * name - A string naming the provider, which will be shown in the Seal results\n   * url - A string containing the URL to insert the user's query into. This should contain one and only one `%s`"
+        ],
+        "parameters_gfm": "<ul>\n<li>aTable - An optional table of providers, which must contain the following keys:<ul>\n<li>name - A string naming the provider, which will be shown in the Seal results</li>\n<li>url - A string containing the URL to insert the user's query into. This should contain one and only one <code>%s</code></li>\n</ul>\n</li>\n</ul>\n",
+        "returns": [
+          " * Either a table of current providers, if no parameter was passed, or nothing if a parmameter was passed."
+        ],
+        "returns_gfm": "<ul>\n<li>Either a table of current providers, if no parameter was passed, or nothing if a parmameter was passed.</li>\n</ul>\n",
+        "signature": "Seal.plugins.urlformats:providersTable(aTable)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "Seal.plugins.urlformats",
+    "stripped_doc": "This plugin is invoked with the `uf` keyword and requires some configuration, see `:providersTable()`\n\nThe way this works is by defining a set of providers, each of which contains a URL with a `%s` somewhere insert it.\nWhen the user types `uf` in Seal, followed by some more characters, those characters will be inserted into the string at the point where the `%s` is.\n\nBy way of an example, you could define a provider with a url like `http://bugs.mycorp.com/showBug?id=%s`, and just need to type `uf 123456` in Seal to get a quick shortcut to open the full URL.",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [],
+    "Variable": [
+      {
+        "def": "Seal.plugins.useractions.actions",
+        "def_gfm": "Seal.plugins.useractions.actions",
+        "desc": "",
+        "desc_gfm": "",
+        "doc": "\nA table containing the definitions of static user-defined actions. Each entry is indexed by the name of the entry as it will be shown in the chooser. Its value is a table which can have the following keys (one of `fn` or `url` is required. If both are provided, `url` is ignored):\n * fn - A function which will be called when the entry is selected. The function receives no arguments.\n * url - A URL which will be opened when the entry is selected. Can also be non-HTTP URLs, such as `mailto:` or other app-specific URLs.\n * icon - (optional) An `hs.image` object that will be shown next to the entry in the chooser. If not provided, `Seal.plugins.useractions.default_icon` is used. For `url` bookmarks, it can be set to `\"favicon\"` to fetch and use the website's favicon.\n * keyword - (optional) A command by which this action will be invoked, effectively turning it into a Seal command. Any arguments passed to the command will be handled as follows:\n   * For `fn` actions, passed as an argument to the function\n   * For `url` actions, substituted into the URL, taking the place of any occurrences of `${query}`.\n * hotkey - (optional) A hotkey specification in the form `{ modifiers, key }` by which this action can be invoked.\n\nExample configuration:\n```\nspoon.Seal:loadPlugins({\"useractions\"})\nspoon.Seal.plugins.useractions.actions =\n   {\n      [\"Hammerspoon docs webpage\"] = {\n         url = \"http://hammerspoon.org/docs/\",\n         icon = hs.image.imageFromName(hs.image.systemImageNames.ApplicationIcon),\n         hotkey = { hyper, \"h\" }\n      },\n      [\"Leave corpnet\"] = {\n         fn = function()\n            spoon.WiFiTransitions:processTransition('foo', 'corpnet01')\n         end,\n      },\n      [\"Arrive in corpnet\"] = {\n         fn = function()\n            spoon.WiFiTransitions:processTransition('corpnet01', 'foo')\n         end,\n      },\n      [\"Translate using Leo\"] = {\n         url = \"http://dict.leo.org/ende/index_de.html#/search=${query}\",\n         icon = 'favicon',\n         keyword = \"leo\",\n      },\n      [\"Tell me something\"] = {\n         keyword = \"tellme\",\n         fn = function(str) hs.alert.show(str) end,\n      }\n```",
+        "doc_gfm": "<p>A table containing the definitions of static user-defined actions. Each entry is indexed by the name of the entry as it will be shown in the chooser. Its value is a table which can have the following keys (one of <code>fn</code> or <code>url</code> is required. If both are provided, <code>url</code> is ignored):</p>\n<ul>\n<li>fn - A function which will be called when the entry is selected. The function receives no arguments.</li>\n<li>url - A URL which will be opened when the entry is selected. Can also be non-HTTP URLs, such as <code>mailto:</code> or other app-specific URLs.</li>\n<li>icon - (optional) An <code>hs.image</code> object that will be shown next to the entry in the chooser. If not provided, <code>Seal.plugins.useractions.default_icon</code> is used. For <code>url</code> bookmarks, it can be set to <code>&quot;favicon&quot;</code> to fetch and use the website's favicon.</li>\n<li>keyword - (optional) A command by which this action will be invoked, effectively turning it into a Seal command. Any arguments passed to the command will be handled as follows:<ul>\n<li>For <code>fn</code> actions, passed as an argument to the function</li>\n<li>For <code>url</code> actions, substituted into the URL, taking the place of any occurrences of <code>${query}</code>.</li>\n</ul>\n</li>\n<li>hotkey - (optional) A hotkey specification in the form <code>{ modifiers, key }</code> by which this action can be invoked.</li>\n</ul>\n<p>Example configuration:</p>\n\n<pre><code>spoon.Seal:loadPlugins({&quot;useractions&quot;})\nspoon.Seal.plugins.useractions.actions =\n   {\n      [&quot;Hammerspoon docs webpage&quot;] = {\n         url = &quot;http://hammerspoon.org/docs/&quot;,\n         icon = hs.image.imageFromName(hs.image.systemImageNames.ApplicationIcon),\n         hotkey = { hyper, &quot;h&quot; }\n      },\n      [&quot;Leave corpnet&quot;] = {\n         fn = function()\n            spoon.WiFiTransitions:processTransition('foo', 'corpnet01')\n         end,\n      },\n      [&quot;Arrive in corpnet&quot;] = {\n         fn = function()\n            spoon.WiFiTransitions:processTransition('corpnet01', 'foo')\n         end,\n      },\n      [&quot;Translate using Leo&quot;] = {\n         url = &quot;http://dict.leo.org/ende/index_de.html#/search=${query}&quot;,\n         icon = 'favicon',\n         keyword = &quot;leo&quot;,\n      },\n      [&quot;Tell me something&quot;] = {\n         keyword = &quot;tellme&quot;,\n         fn = function(str) hs.alert.show(str) end,\n      }\n</code></pre>\n",
+        "file": "Source/Seal.spoon/seal_useractions.lua",
+        "lineno": "12",
+        "name": "actions",
+        "signature": "Seal.plugins.useractions.actions",
+        "stripped_doc": "A table containing the definitions of static user-defined actions. Each entry is indexed by the name of the entry as it will be shown in the chooser. Its value is a table which can have the following keys (one of `fn` or `url` is required. If both are provided, `url` is ignored):\n * fn - A function which will be called when the entry is selected. The function receives no arguments.\n * url - A URL which will be opened when the entry is selected. Can also be non-HTTP URLs, such as `mailto:` or other app-specific URLs.\n * icon - (optional) An `hs.image` object that will be shown next to the entry in the chooser. If not provided, `Seal.plugins.useractions.default_icon` is used. For `url` bookmarks, it can be set to `\"favicon\"` to fetch and use the website's favicon.\n * keyword - (optional) A command by which this action will be invoked, effectively turning it into a Seal command. Any arguments passed to the command will be handled as follows:\n   * For `fn` actions, passed as an argument to the function\n   * For `url` actions, substituted into the URL, taking the place of any occurrences of `${query}`.\n * hotkey - (optional) A hotkey specification in the form `{ modifiers, key }` by which this action can be invoked.\nExample configuration:\n```\nspoon.Seal:loadPlugins({\"useractions\"})\nspoon.Seal.plugins.useractions.actions =\n   {\n      [\"Hammerspoon docs webpage\"] = {\n         url = \"http://hammerspoon.org/docs/\",\n         icon = hs.image.imageFromName(hs.image.systemImageNames.ApplicationIcon),\n         hotkey = { hyper, \"h\" }\n      },\n      [\"Leave corpnet\"] = {\n         fn = function()\n            spoon.WiFiTransitions:processTransition('foo', 'corpnet01')\n         end,\n      },\n      [\"Arrive in corpnet\"] = {\n         fn = function()\n            spoon.WiFiTransitions:processTransition('corpnet01', 'foo')\n         end,\n      },\n      [\"Translate using Leo\"] = {\n         url = \"http://dict.leo.org/ende/index_de.html#/search=${query}\",\n         icon = 'favicon',\n         keyword = \"leo\",\n      },\n      [\"Tell me something\"] = {\n         keyword = \"tellme\",\n         fn = function(str) hs.alert.show(str) end,\n      }\n```",
+        "type": "Variable"
+      },
+      {
+        "def": "Seal.plugins.useractions.get_favicon",
+        "def_gfm": "Seal.plugins.useractions.get_favicon",
+        "desc": "",
+        "desc_gfm": "",
+        "doc": "\nIf `true`, attempt to obtain the favicon for URLs added through the `add` command, and use it in the chooser. Defaults to `true`",
+        "doc_gfm": "<p>If <code>true</code>, attempt to obtain the favicon for URLs added through the <code>add</code> command, and use it in the chooser. Defaults to <code>true</code></p>\n",
+        "file": "Source/Seal.spoon/seal_useractions.lua",
+        "lineno": "56",
+        "name": "get_favicon",
+        "signature": "Seal.plugins.useractions.get_favicon",
+        "stripped_doc": "If `true`, attempt to obtain the favicon for URLs added through the `add` command, and use it in the chooser. Defaults to `true`",
+        "type": "Variable"
+      }
+    ],
+    "desc": "Allow accessing user-defined bookmarks and arbitrary actions from Seal.",
+    "desc_gfm": "<p>Allow accessing user-defined bookmarks and arbitrary actions from Seal.</p>\n",
+    "doc": "Allow accessing user-defined bookmarks and arbitrary actions from Seal.\n",
+    "doc_gfm": "<p>Allow accessing user-defined bookmarks and arbitrary actions from Seal.</p>\n",
+    "items": [
+      {
+        "def": "Seal.plugins.useractions.actions",
+        "def_gfm": "Seal.plugins.useractions.actions",
+        "desc": "",
+        "desc_gfm": "",
+        "doc": "\nA table containing the definitions of static user-defined actions. Each entry is indexed by the name of the entry as it will be shown in the chooser. Its value is a table which can have the following keys (one of `fn` or `url` is required. If both are provided, `url` is ignored):\n * fn - A function which will be called when the entry is selected. The function receives no arguments.\n * url - A URL which will be opened when the entry is selected. Can also be non-HTTP URLs, such as `mailto:` or other app-specific URLs.\n * icon - (optional) An `hs.image` object that will be shown next to the entry in the chooser. If not provided, `Seal.plugins.useractions.default_icon` is used. For `url` bookmarks, it can be set to `\"favicon\"` to fetch and use the website's favicon.\n * keyword - (optional) A command by which this action will be invoked, effectively turning it into a Seal command. Any arguments passed to the command will be handled as follows:\n   * For `fn` actions, passed as an argument to the function\n   * For `url` actions, substituted into the URL, taking the place of any occurrences of `${query}`.\n * hotkey - (optional) A hotkey specification in the form `{ modifiers, key }` by which this action can be invoked.\n\nExample configuration:\n```\nspoon.Seal:loadPlugins({\"useractions\"})\nspoon.Seal.plugins.useractions.actions =\n   {\n      [\"Hammerspoon docs webpage\"] = {\n         url = \"http://hammerspoon.org/docs/\",\n         icon = hs.image.imageFromName(hs.image.systemImageNames.ApplicationIcon),\n         hotkey = { hyper, \"h\" }\n      },\n      [\"Leave corpnet\"] = {\n         fn = function()\n            spoon.WiFiTransitions:processTransition('foo', 'corpnet01')\n         end,\n      },\n      [\"Arrive in corpnet\"] = {\n         fn = function()\n            spoon.WiFiTransitions:processTransition('corpnet01', 'foo')\n         end,\n      },\n      [\"Translate using Leo\"] = {\n         url = \"http://dict.leo.org/ende/index_de.html#/search=${query}\",\n         icon = 'favicon',\n         keyword = \"leo\",\n      },\n      [\"Tell me something\"] = {\n         keyword = \"tellme\",\n         fn = function(str) hs.alert.show(str) end,\n      }\n```",
+        "doc_gfm": "<p>A table containing the definitions of static user-defined actions. Each entry is indexed by the name of the entry as it will be shown in the chooser. Its value is a table which can have the following keys (one of <code>fn</code> or <code>url</code> is required. If both are provided, <code>url</code> is ignored):</p>\n<ul>\n<li>fn - A function which will be called when the entry is selected. The function receives no arguments.</li>\n<li>url - A URL which will be opened when the entry is selected. Can also be non-HTTP URLs, such as <code>mailto:</code> or other app-specific URLs.</li>\n<li>icon - (optional) An <code>hs.image</code> object that will be shown next to the entry in the chooser. If not provided, <code>Seal.plugins.useractions.default_icon</code> is used. For <code>url</code> bookmarks, it can be set to <code>&quot;favicon&quot;</code> to fetch and use the website's favicon.</li>\n<li>keyword - (optional) A command by which this action will be invoked, effectively turning it into a Seal command. Any arguments passed to the command will be handled as follows:<ul>\n<li>For <code>fn</code> actions, passed as an argument to the function</li>\n<li>For <code>url</code> actions, substituted into the URL, taking the place of any occurrences of <code>${query}</code>.</li>\n</ul>\n</li>\n<li>hotkey - (optional) A hotkey specification in the form <code>{ modifiers, key }</code> by which this action can be invoked.</li>\n</ul>\n<p>Example configuration:</p>\n\n<pre><code>spoon.Seal:loadPlugins({&quot;useractions&quot;})\nspoon.Seal.plugins.useractions.actions =\n   {\n      [&quot;Hammerspoon docs webpage&quot;] = {\n         url = &quot;http://hammerspoon.org/docs/&quot;,\n         icon = hs.image.imageFromName(hs.image.systemImageNames.ApplicationIcon),\n         hotkey = { hyper, &quot;h&quot; }\n      },\n      [&quot;Leave corpnet&quot;] = {\n         fn = function()\n            spoon.WiFiTransitions:processTransition('foo', 'corpnet01')\n         end,\n      },\n      [&quot;Arrive in corpnet&quot;] = {\n         fn = function()\n            spoon.WiFiTransitions:processTransition('corpnet01', 'foo')\n         end,\n      },\n      [&quot;Translate using Leo&quot;] = {\n         url = &quot;http://dict.leo.org/ende/index_de.html#/search=${query}&quot;,\n         icon = 'favicon',\n         keyword = &quot;leo&quot;,\n      },\n      [&quot;Tell me something&quot;] = {\n         keyword = &quot;tellme&quot;,\n         fn = function(str) hs.alert.show(str) end,\n      }\n</code></pre>\n",
+        "file": "Source/Seal.spoon/seal_useractions.lua",
+        "lineno": "12",
+        "name": "actions",
+        "signature": "Seal.plugins.useractions.actions",
+        "stripped_doc": "A table containing the definitions of static user-defined actions. Each entry is indexed by the name of the entry as it will be shown in the chooser. Its value is a table which can have the following keys (one of `fn` or `url` is required. If both are provided, `url` is ignored):\n * fn - A function which will be called when the entry is selected. The function receives no arguments.\n * url - A URL which will be opened when the entry is selected. Can also be non-HTTP URLs, such as `mailto:` or other app-specific URLs.\n * icon - (optional) An `hs.image` object that will be shown next to the entry in the chooser. If not provided, `Seal.plugins.useractions.default_icon` is used. For `url` bookmarks, it can be set to `\"favicon\"` to fetch and use the website's favicon.\n * keyword - (optional) A command by which this action will be invoked, effectively turning it into a Seal command. Any arguments passed to the command will be handled as follows:\n   * For `fn` actions, passed as an argument to the function\n   * For `url` actions, substituted into the URL, taking the place of any occurrences of `${query}`.\n * hotkey - (optional) A hotkey specification in the form `{ modifiers, key }` by which this action can be invoked.\nExample configuration:\n```\nspoon.Seal:loadPlugins({\"useractions\"})\nspoon.Seal.plugins.useractions.actions =\n   {\n      [\"Hammerspoon docs webpage\"] = {\n         url = \"http://hammerspoon.org/docs/\",\n         icon = hs.image.imageFromName(hs.image.systemImageNames.ApplicationIcon),\n         hotkey = { hyper, \"h\" }\n      },\n      [\"Leave corpnet\"] = {\n         fn = function()\n            spoon.WiFiTransitions:processTransition('foo', 'corpnet01')\n         end,\n      },\n      [\"Arrive in corpnet\"] = {\n         fn = function()\n            spoon.WiFiTransitions:processTransition('corpnet01', 'foo')\n         end,\n      },\n      [\"Translate using Leo\"] = {\n         url = \"http://dict.leo.org/ende/index_de.html#/search=${query}\",\n         icon = 'favicon',\n         keyword = \"leo\",\n      },\n      [\"Tell me something\"] = {\n         keyword = \"tellme\",\n         fn = function(str) hs.alert.show(str) end,\n      }\n```",
+        "type": "Variable"
+      },
+      {
+        "def": "Seal.plugins.useractions.get_favicon",
+        "def_gfm": "Seal.plugins.useractions.get_favicon",
+        "desc": "",
+        "desc_gfm": "",
+        "doc": "\nIf `true`, attempt to obtain the favicon for URLs added through the `add` command, and use it in the chooser. Defaults to `true`",
+        "doc_gfm": "<p>If <code>true</code>, attempt to obtain the favicon for URLs added through the <code>add</code> command, and use it in the chooser. Defaults to <code>true</code></p>\n",
+        "file": "Source/Seal.spoon/seal_useractions.lua",
+        "lineno": "56",
+        "name": "get_favicon",
+        "signature": "Seal.plugins.useractions.get_favicon",
+        "stripped_doc": "If `true`, attempt to obtain the favicon for URLs added through the `add` command, and use it in the chooser. Defaults to `true`",
+        "type": "Variable"
+      }
+    ],
+    "name": "Seal.plugins.useractions",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
         "def": "SmartAppSwitcher:bindHotkeys(mapping)",
         "def_gfm": "SmartAppSwitcher:bindHotkeys(mapping)",
         "desc": "Binds hotkey to each application",
