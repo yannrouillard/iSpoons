@@ -1,0 +1,93 @@
+[
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "Toggler:bindHotkeys(mapping) -> self",
+        "desc": "Binds hotkeys to Toggler methods",
+        "doc": "Binds hotkeys to Toggler methods\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for each available operation\n\nReturns:\n * The Toggler object",
+        "examples": [],
+        "file": "Source/Toggler.spoon//init.lua",
+        "lineno": "56",
+        "name": "bindHotkeys",
+        "notes": [],
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for each available operation"
+        ],
+        "returns": [
+          " * The Toggler object"
+        ],
+        "signature": "Toggler:bindHotkeys(mapping) -> self",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Toggler:toggleSidecar()",
+        "desc": "Enable/disable Sidecar (iPad as second display)",
+        "doc": "Enable/disable Sidecar (iPad as second display)\n\nParameters:\n * None\n",
+        "examples": [],
+        "file": "Source/Toggler.spoon//init.lua",
+        "lineno": "38",
+        "name": "toggleSidecar",
+        "notes": [],
+        "parameters": [
+          " * None"
+        ],
+        "returns": [],
+        "signature": "Toggler:toggleSidecar()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Export various toggle methods",
+    "doc": "Export various toggle methods\n",
+    "items": [
+      {
+        "def": "Toggler:bindHotkeys(mapping) -> self",
+        "desc": "Binds hotkeys to Toggler methods",
+        "doc": "Binds hotkeys to Toggler methods\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for each available operation\n\nReturns:\n * The Toggler object",
+        "examples": [],
+        "file": "Source/Toggler.spoon//init.lua",
+        "lineno": "56",
+        "name": "bindHotkeys",
+        "notes": [],
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for each available operation"
+        ],
+        "returns": [
+          " * The Toggler object"
+        ],
+        "signature": "Toggler:bindHotkeys(mapping) -> self",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Toggler:toggleSidecar()",
+        "desc": "Enable/disable Sidecar (iPad as second display)",
+        "doc": "Enable/disable Sidecar (iPad as second display)\n\nParameters:\n * None\n",
+        "examples": [],
+        "file": "Source/Toggler.spoon//init.lua",
+        "lineno": "38",
+        "name": "toggleSidecar",
+        "notes": [],
+        "parameters": [
+          " * None"
+        ],
+        "returns": [],
+        "signature": "Toggler:toggleSidecar()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "Toggler",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
+  }
+]
