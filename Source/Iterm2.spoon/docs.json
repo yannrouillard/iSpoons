@@ -1,0 +1,135 @@
+[
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "Iterm2:closeMatchinTabs(workingDirectoryPrefix)",
+        "desc": "Close all tabs whose working directory starts with the given prefix",
+        "doc": "Close all tabs whose working directory starts with the given prefix\n\nParameters:\n * the absolute path to a directory prefix",
+        "examples": [],
+        "file": "Source/Iterm2.spoon//init.lua",
+        "lineno": "70",
+        "name": "closeMatchinTabs",
+        "notes": [],
+        "parameters": [
+          " * the absolute path to a directory prefix"
+        ],
+        "returns": [],
+        "signature": "Iterm2:closeMatchinTabs(workingDirectoryPrefix)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Iterm2:getActiveTab(mapping)",
+        "desc": "Return information about the currently active tab in iTerm2",
+        "doc": "Return information about the currently active tab in iTerm2\n\nParameters:\n * None\n\nReturns:\n * A Table containing the following information about the tab\n   - working_directory: The working directory of the tab\n   - title: the title of the tab\n   - id: the id of the tab  \n    ",
+        "examples": [],
+        "file": "Source/Iterm2.spoon//init.lua",
+        "lineno": "53",
+        "name": "getActiveTab",
+        "notes": [],
+        "parameters": [
+          " * None"
+        ],
+        "returns": [
+          " * A Table containing the following information about the tab",
+          "   - working_directory: The working directory of the tab",
+          "   - title: the title of the tab",
+          "   - id: the id of the tab  ",
+          "    "
+        ],
+        "signature": "Iterm2:getActiveTab(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Iterm2:openOrActivateTab(workingDirectory)",
+        "desc": "Open a new tab or activate an existing one with the given working directory",
+        "doc": "Open a new tab or activate an existing one with the given working directory\n\nParameters:\n * the absolute path to a directory",
+        "examples": [],
+        "file": "Source/Iterm2.spoon//init.lua",
+        "lineno": "82",
+        "name": "openOrActivateTab",
+        "notes": [],
+        "parameters": [
+          " * the absolute path to a directory"
+        ],
+        "returns": [],
+        "signature": "Iterm2:openOrActivateTab(workingDirectory)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Provides helper functions to interact with iTerm2 through its AppleScript API.",
+    "doc": "Provides helper functions to interact with iTerm2 through its AppleScript API.\n\nIt requires the installation of the AutoLaunch script hammerspoon_interface.py\nin iTerm2. This can be done by running the following command:\n```\n  ln -s ~/.hammerspoon/Spoons/Iterm2.spoon/hammerspoon_interface.py \\\n        ~/\"Application Support/iTerm2/Scripts/AutoLaunch/hammerspoon_interface.py\"\n``` ",
+    "items": [
+      {
+        "def": "Iterm2:closeMatchinTabs(workingDirectoryPrefix)",
+        "desc": "Close all tabs whose working directory starts with the given prefix",
+        "doc": "Close all tabs whose working directory starts with the given prefix\n\nParameters:\n * the absolute path to a directory prefix",
+        "examples": [],
+        "file": "Source/Iterm2.spoon//init.lua",
+        "lineno": "70",
+        "name": "closeMatchinTabs",
+        "notes": [],
+        "parameters": [
+          " * the absolute path to a directory prefix"
+        ],
+        "returns": [],
+        "signature": "Iterm2:closeMatchinTabs(workingDirectoryPrefix)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Iterm2:getActiveTab(mapping)",
+        "desc": "Return information about the currently active tab in iTerm2",
+        "doc": "Return information about the currently active tab in iTerm2\n\nParameters:\n * None\n\nReturns:\n * A Table containing the following information about the tab\n   - working_directory: The working directory of the tab\n   - title: the title of the tab\n   - id: the id of the tab  \n    ",
+        "examples": [],
+        "file": "Source/Iterm2.spoon//init.lua",
+        "lineno": "53",
+        "name": "getActiveTab",
+        "notes": [],
+        "parameters": [
+          " * None"
+        ],
+        "returns": [
+          " * A Table containing the following information about the tab",
+          "   - working_directory: The working directory of the tab",
+          "   - title: the title of the tab",
+          "   - id: the id of the tab  ",
+          "    "
+        ],
+        "signature": "Iterm2:getActiveTab(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Iterm2:openOrActivateTab(workingDirectory)",
+        "desc": "Open a new tab or activate an existing one with the given working directory",
+        "doc": "Open a new tab or activate an existing one with the given working directory\n\nParameters:\n * the absolute path to a directory",
+        "examples": [],
+        "file": "Source/Iterm2.spoon//init.lua",
+        "lineno": "82",
+        "name": "openOrActivateTab",
+        "notes": [],
+        "parameters": [
+          " * the absolute path to a directory"
+        ],
+        "returns": [],
+        "signature": "Iterm2:openOrActivateTab(workingDirectory)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "Iterm2",
+    "stripped_doc": "\nIt requires the installation of the AutoLaunch script hammerspoon_interface.py\nin iTerm2. This can be done by running the following command:\n```\n  ln -s ~/.hammerspoon/Spoons/Iterm2.spoon/hammerspoon_interface.py \\\n        ~/\"Application Support/iTerm2/Scripts/AutoLaunch/hammerspoon_interface.py\"\n``` ",
+    "submodules": [],
+    "type": "Module"
+  }
+]
