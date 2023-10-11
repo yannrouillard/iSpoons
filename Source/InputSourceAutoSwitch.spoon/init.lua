@@ -16,7 +16,7 @@ obj.license = "MIT - https://opensource.org/licenses/MIT"
 -- Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.
 obj.logger = hs.logger.new('InputSourceAutoSwtich', 'info')
 
--- InputSourceAutoSwitch.logger
+-- InputSourceAutoSwitch.inputSourcePerApplication
 -- Variable
 -- Mapping between application names and input sources to use when the application is focused. 
 --
