@@ -980,5 +980,168 @@
     "stripped_doc": "",
     "submodules": [],
     "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "WorkOnOff:bindHotkeys(mapping) -> self",
+        "def_gfm": "WorkOnOff:bindHotkeys(mapping) -&gt; self",
+        "desc": "Binds hotkeys to WorkOnOff methods",
+        "desc_gfm": "<p>Binds hotkeys to WorkOnOff methods</p>\n",
+        "doc": "Binds hotkeys to WorkOnOff methods\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for each available operation\n\nReturns:\n * The WorkOnOff object",
+        "doc_gfm": "<p>Binds hotkeys to WorkOnOff methods</p>\n<p>Parameters:</p>\n<ul>\n<li>mapping - A table containing hotkey modifier/key details for each available operation</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The WorkOnOff object</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/WorkOnOff.spoon/init.lua",
+        "lineno": "106",
+        "name": "bindHotkeys",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for each available operation"
+        ],
+        "parameters_gfm": "<ul>\n<li>mapping - A table containing hotkey modifier/key details for each available operation</li>\n</ul>\n",
+        "returns": [
+          " * The WorkOnOff object"
+        ],
+        "returns_gfm": "<ul>\n<li>The WorkOnOff object</li>\n</ul>\n",
+        "signature": "WorkOnOff:bindHotkeys(mapping) -> self",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "WorkOnOff:workOff()",
+        "def_gfm": "WorkOnOff:workOff()",
+        "desc": "Stop everything (applications, spoons...) that are work-related",
+        "desc_gfm": "<p>Stop everything (applications, spoons...) that are work-related</p>\n",
+        "doc": "Stop everything (applications, spoons...) that are work-related\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Stop everything (applications, spoons...) that are work-related</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/WorkOnOff.spoon/init.lua",
+        "lineno": "77",
+        "name": "workOff",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "WorkOnOff:workOff()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "WorkOnOff:workOn()",
+        "def_gfm": "WorkOnOff:workOn()",
+        "desc": "Start everything (applications, spoons, urls...) that are required to start the work day",
+        "desc_gfm": "<p>Start everything (applications, spoons, urls...) that are required to start the work day</p>\n",
+        "doc": "Start everything (applications, spoons, urls...) that are required to start the work day\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Start everything (applications, spoons, urls...) that are required to start the work day</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/WorkOnOff.spoon/init.lua",
+        "lineno": "50",
+        "name": "workOn",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "WorkOnOff:workOn()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Easily start/stop applications, open URLs and start/stop Spoons when you start/stop working",
+    "desc_gfm": "<p>Easily start/stop applications, open URLs and start/stop Spoons when you start/stop working</p>\n",
+    "doc": "Easily start/stop applications, open URLs and start/stop Spoons when you start/stop working\n",
+    "doc_gfm": "<p>Easily start/stop applications, open URLs and start/stop Spoons when you start/stop working</p>\n",
+    "items": [
+      {
+        "def": "WorkOnOff:bindHotkeys(mapping) -> self",
+        "def_gfm": "WorkOnOff:bindHotkeys(mapping) -&gt; self",
+        "desc": "Binds hotkeys to WorkOnOff methods",
+        "desc_gfm": "<p>Binds hotkeys to WorkOnOff methods</p>\n",
+        "doc": "Binds hotkeys to WorkOnOff methods\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for each available operation\n\nReturns:\n * The WorkOnOff object",
+        "doc_gfm": "<p>Binds hotkeys to WorkOnOff methods</p>\n<p>Parameters:</p>\n<ul>\n<li>mapping - A table containing hotkey modifier/key details for each available operation</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The WorkOnOff object</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/WorkOnOff.spoon/init.lua",
+        "lineno": "106",
+        "name": "bindHotkeys",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for each available operation"
+        ],
+        "parameters_gfm": "<ul>\n<li>mapping - A table containing hotkey modifier/key details for each available operation</li>\n</ul>\n",
+        "returns": [
+          " * The WorkOnOff object"
+        ],
+        "returns_gfm": "<ul>\n<li>The WorkOnOff object</li>\n</ul>\n",
+        "signature": "WorkOnOff:bindHotkeys(mapping) -> self",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "WorkOnOff:workOff()",
+        "def_gfm": "WorkOnOff:workOff()",
+        "desc": "Stop everything (applications, spoons...) that are work-related",
+        "desc_gfm": "<p>Stop everything (applications, spoons...) that are work-related</p>\n",
+        "doc": "Stop everything (applications, spoons...) that are work-related\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Stop everything (applications, spoons...) that are work-related</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/WorkOnOff.spoon/init.lua",
+        "lineno": "77",
+        "name": "workOff",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "WorkOnOff:workOff()",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "WorkOnOff:workOn()",
+        "def_gfm": "WorkOnOff:workOn()",
+        "desc": "Start everything (applications, spoons, urls...) that are required to start the work day",
+        "desc_gfm": "<p>Start everything (applications, spoons, urls...) that are required to start the work day</p>\n",
+        "doc": "Start everything (applications, spoons, urls...) that are required to start the work day\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Start everything (applications, spoons, urls...) that are required to start the work day</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/WorkOnOff.spoon/init.lua",
+        "lineno": "50",
+        "name": "workOn",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "WorkOnOff:workOn()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "WorkOnOff",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
   }
 ]

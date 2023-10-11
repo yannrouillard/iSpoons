@@ -1,0 +1,138 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hammerspoon docs: WorkOnOff</title>
+    <style type="text/css">
+      a { text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      th { background-color: #DDDDDD; vertical-align: top; padding: 3px; }
+      td { width: 100%; background-color: #EEEEEE; vertical-align: top; padding: 3px; }
+      table { width: 100% ; border: 1px solid #0; text-align: left; }
+      section > table table td { width: 0; }
+    </style>
+    <link rel="stylesheet" href="docs.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="./index.html">docs</a> &raquo; WorkOnOff</h1>
+      <p>Easily start/stop applications, open URLs and start/stop Spoons when you start/stop working</p>
+
+      </header>
+      <h3>API Overview</h3>
+      <ul>
+        <li>Methods - API calls which can only be made on an object returned by a constructor</li>
+          <ul>
+            <li><a href="#bindHotkeys">bindHotkeys</a></li>
+            <li><a href="#workOff">workOff</a></li>
+            <li><a href="#workOn">workOn</a></li>
+          </ul>
+      </ul>
+      <h3>API Documentation</h3>
+        <h4 class="documentation-section">Methods</h4>
+          <section id="bindHotkeys">
+            <a name="//apple_ref/cpp/Method/bindHotkeys" class="dashAnchor"></a>
+            <h5><a href="#bindHotkeys">bindHotkeys</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>WorkOnOff:bindHotkeys(mapping) -&gt; self</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Binds hotkeys to WorkOnOff methods</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>mapping - A table containing hotkey modifier/key details for each available operation</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td><ul>
+<li>The WorkOnOff object</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/WorkOnOff.spoon/init.lua#L106">Source/WorkOnOff.spoon/init.lua line 106</a></td>
+              </tr>
+            </table>
+          </section>
+          <section id="workOff">
+            <a name="//apple_ref/cpp/Method/workOff" class="dashAnchor"></a>
+            <h5><a href="#workOff">workOff</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>WorkOnOff:workOff()</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Stop everything (applications, spoons...) that are work-related</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>None</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td></td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/WorkOnOff.spoon/init.lua#L77">Source/WorkOnOff.spoon/init.lua line 77</a></td>
+              </tr>
+            </table>
+          </section>
+          <section id="workOn">
+            <a name="//apple_ref/cpp/Method/workOn" class="dashAnchor"></a>
+            <h5><a href="#workOn">workOn</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>WorkOnOff:workOn()</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Start everything (applications, spoons, urls...) that are required to start the work day</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>None</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td></td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/WorkOnOff.spoon/init.lua#L50">Source/WorkOnOff.spoon/init.lua line 50</a></td>
+              </tr>
+            </table>
+          </section>
+  </body>
+</html>
