@@ -140,5 +140,28 @@
     "module": "VsCode",
     "name": "listWindows",
     "type": "Method"
+  },
+  {
+    "desc": "Easily start/stop applications, open URLs and start/stop Spoons when you start/stop working",
+    "name": "WorkOnOff",
+    "type": "Module"
+  },
+  {
+    "desc": "Binds hotkeys to WorkOnOff methods",
+    "module": "WorkOnOff",
+    "name": "bindHotkeys",
+    "type": "Method"
+  },
+  {
+    "desc": "Stop everything (applications, spoons...) that are work-related",
+    "module": "WorkOnOff",
+    "name": "workOff",
+    "type": "Method"
+  },
+  {
+    "desc": "Start everything (applications, spoons, urls...) that are required to start the work day",
+    "module": "WorkOnOff",
+    "name": "workOn",
+    "type": "Method"
   }
 ]
