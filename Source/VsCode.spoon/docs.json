@@ -1,0 +1,149 @@
+[
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "VsCode.closeMatchingWindows(workingDirectoryPrefix)",
+        "desc": "Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.",
+        "doc": "Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.\n\nParameters:\n * workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window.\n\nReturns:\n * None",
+        "examples": [],
+        "file": "Source/VsCode.spoon//init.lua",
+        "lineno": "100",
+        "name": "closeMatchingWindows",
+        "notes": [],
+        "parameters": [
+          " * workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window."
+        ],
+        "returns": [
+          " * None"
+        ],
+        "signature": "VsCode.closeMatchingWindows(workingDirectoryPrefix)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "VsCode.getWindowInfo(window)",
+        "desc": "Extracts information about the specified Visual Studio Code window.",
+        "doc": "Extracts information about the specified Visual Studio Code window.\n\nParameters:\n * window - The window to extract information from.\n\nReturns:\n * A table containing the following information about the window:\n   - window: The window object\n   - workspaceFolder: the absolute path to the workspace folder of the window\n   - filename: the name of the file opened in the window (or nil if no file is opened)",
+        "examples": [],
+        "file": "Source/VsCode.spoon//init.lua",
+        "lineno": "61",
+        "name": "getWindowInfo",
+        "notes": [],
+        "parameters": [
+          " * window - The window to extract information from."
+        ],
+        "returns": [
+          " * A table containing the following information about the window:",
+          "   - window: The window object",
+          "   - workspaceFolder: the absolute path to the workspace folder of the window",
+          "   - filename: the name of the file opened in the window (or nil if no file is opened)"
+        ],
+        "signature": "VsCode.getWindowInfo(window)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "VsCode.listWindows()",
+        "desc": "Returns a list of all Visual Code windows with some additional information",
+        "doc": "Returns a list of all Visual Code windows with some additional information\n\nParameters:\n * None\n\nReturns:\n * A table containing the list of Visual Studio Code window with the following \n   information about all Code windows:\n   - window: The window object\n   - workspaceFolder: the absolute path to the workspace folder of the window\n   - filename: the name of the file opened in the window (or nil if no file is opened)",
+        "examples": [],
+        "file": "Source/VsCode.spoon//init.lua",
+        "lineno": "77",
+        "name": "listWindows",
+        "notes": [],
+        "parameters": [
+          " * None"
+        ],
+        "returns": [
+          " * A table containing the list of Visual Studio Code window with the following ",
+          "   information about all Code windows:",
+          "   - window: The window object",
+          "   - workspaceFolder: the absolute path to the workspace folder of the window",
+          "   - filename: the name of the file opened in the window (or nil if no file is opened)"
+        ],
+        "signature": "VsCode.listWindows()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Provides helper functions to interact with iTerm2 through its AppleScript API.",
+    "doc": "Provides helper functions to interact with iTerm2 through its AppleScript API.\n",
+    "items": [
+      {
+        "def": "VsCode.closeMatchingWindows(workingDirectoryPrefix)",
+        "desc": "Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.",
+        "doc": "Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.\n\nParameters:\n * workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window.\n\nReturns:\n * None",
+        "examples": [],
+        "file": "Source/VsCode.spoon//init.lua",
+        "lineno": "100",
+        "name": "closeMatchingWindows",
+        "notes": [],
+        "parameters": [
+          " * workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window."
+        ],
+        "returns": [
+          " * None"
+        ],
+        "signature": "VsCode.closeMatchingWindows(workingDirectoryPrefix)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "VsCode.getWindowInfo(window)",
+        "desc": "Extracts information about the specified Visual Studio Code window.",
+        "doc": "Extracts information about the specified Visual Studio Code window.\n\nParameters:\n * window - The window to extract information from.\n\nReturns:\n * A table containing the following information about the window:\n   - window: The window object\n   - workspaceFolder: the absolute path to the workspace folder of the window\n   - filename: the name of the file opened in the window (or nil if no file is opened)",
+        "examples": [],
+        "file": "Source/VsCode.spoon//init.lua",
+        "lineno": "61",
+        "name": "getWindowInfo",
+        "notes": [],
+        "parameters": [
+          " * window - The window to extract information from."
+        ],
+        "returns": [
+          " * A table containing the following information about the window:",
+          "   - window: The window object",
+          "   - workspaceFolder: the absolute path to the workspace folder of the window",
+          "   - filename: the name of the file opened in the window (or nil if no file is opened)"
+        ],
+        "signature": "VsCode.getWindowInfo(window)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "VsCode.listWindows()",
+        "desc": "Returns a list of all Visual Code windows with some additional information",
+        "doc": "Returns a list of all Visual Code windows with some additional information\n\nParameters:\n * None\n\nReturns:\n * A table containing the list of Visual Studio Code window with the following \n   information about all Code windows:\n   - window: The window object\n   - workspaceFolder: the absolute path to the workspace folder of the window\n   - filename: the name of the file opened in the window (or nil if no file is opened)",
+        "examples": [],
+        "file": "Source/VsCode.spoon//init.lua",
+        "lineno": "77",
+        "name": "listWindows",
+        "notes": [],
+        "parameters": [
+          " * None"
+        ],
+        "returns": [
+          " * A table containing the list of Visual Studio Code window with the following ",
+          "   information about all Code windows:",
+          "   - window: The window object",
+          "   - workspaceFolder: the absolute path to the workspace folder of the window",
+          "   - filename: the name of the file opened in the window (or nil if no file is opened)"
+        ],
+        "signature": "VsCode.listWindows()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "VsCode",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
+  }
+]
