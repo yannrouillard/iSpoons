@@ -55,7 +55,7 @@ obj.functions = {
 ---  * None
 ---
 function obj:workOn()
-    hs.fnutils.ieach(self.applications.always, function(app)
+    hs.fnutils.ieach(self.applications.startstop, function(app)
         hs.application.launchOrFocus(app)
     end)
 
@@ -82,7 +82,7 @@ end
 ---  * None
 ---
 function obj:workOff()
-    local appsToKill = hs.fnutils.concat(hs.fnutils.copy(self.applications.always), self.applications.ondemand)
+    local appsToKill = hs.fnutils.concat(hs.fnutils.copy(self.applications.startstop), self.applications.stop)
 
     hs.fnutils.ieach(appsToKill, function(appName)
         local app = hs.application.find(appName)
