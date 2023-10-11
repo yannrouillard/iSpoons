@@ -429,6 +429,123 @@
     "Deprecated": [],
     "Field": [],
     "Function": [],
+    "Method": [
+      {
+        "def": "Toggler:bindHotkeys(mapping) -> self",
+        "def_gfm": "Toggler:bindHotkeys(mapping) -&gt; self",
+        "desc": "Binds hotkeys to Toggler methods",
+        "desc_gfm": "<p>Binds hotkeys to Toggler methods</p>\n",
+        "doc": "Binds hotkeys to Toggler methods\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for each available operation\n\nReturns:\n * The Toggler object",
+        "doc_gfm": "<p>Binds hotkeys to Toggler methods</p>\n<p>Parameters:</p>\n<ul>\n<li>mapping - A table containing hotkey modifier/key details for each available operation</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Toggler object</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Toggler.spoon/init.lua",
+        "lineno": "56",
+        "name": "bindHotkeys",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for each available operation"
+        ],
+        "parameters_gfm": "<ul>\n<li>mapping - A table containing hotkey modifier/key details for each available operation</li>\n</ul>\n",
+        "returns": [
+          " * The Toggler object"
+        ],
+        "returns_gfm": "<ul>\n<li>The Toggler object</li>\n</ul>\n",
+        "signature": "Toggler:bindHotkeys(mapping) -> self",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Toggler:toggleSidecar()",
+        "def_gfm": "Toggler:toggleSidecar()",
+        "desc": "Enable/disable Sidecar (iPad as second display)",
+        "desc_gfm": "<p>Enable/disable Sidecar (iPad as second display)</p>\n",
+        "doc": "Enable/disable Sidecar (iPad as second display)\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Enable/disable Sidecar (iPad as second display)</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Toggler.spoon/init.lua",
+        "lineno": "38",
+        "name": "toggleSidecar",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "Toggler:toggleSidecar()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Export various toggle methods",
+    "desc_gfm": "<p>Export various toggle methods</p>\n",
+    "doc": "Export various toggle methods\n",
+    "doc_gfm": "<p>Export various toggle methods</p>\n",
+    "items": [
+      {
+        "def": "Toggler:bindHotkeys(mapping) -> self",
+        "def_gfm": "Toggler:bindHotkeys(mapping) -&gt; self",
+        "desc": "Binds hotkeys to Toggler methods",
+        "desc_gfm": "<p>Binds hotkeys to Toggler methods</p>\n",
+        "doc": "Binds hotkeys to Toggler methods\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for each available operation\n\nReturns:\n * The Toggler object",
+        "doc_gfm": "<p>Binds hotkeys to Toggler methods</p>\n<p>Parameters:</p>\n<ul>\n<li>mapping - A table containing hotkey modifier/key details for each available operation</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>The Toggler object</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Toggler.spoon/init.lua",
+        "lineno": "56",
+        "name": "bindHotkeys",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * mapping - A table containing hotkey modifier/key details for each available operation"
+        ],
+        "parameters_gfm": "<ul>\n<li>mapping - A table containing hotkey modifier/key details for each available operation</li>\n</ul>\n",
+        "returns": [
+          " * The Toggler object"
+        ],
+        "returns_gfm": "<ul>\n<li>The Toggler object</li>\n</ul>\n",
+        "signature": "Toggler:bindHotkeys(mapping) -> self",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Toggler:toggleSidecar()",
+        "def_gfm": "Toggler:toggleSidecar()",
+        "desc": "Enable/disable Sidecar (iPad as second display)",
+        "desc_gfm": "<p>Enable/disable Sidecar (iPad as second display)</p>\n",
+        "doc": "Enable/disable Sidecar (iPad as second display)\n\nParameters:\n * None\n",
+        "doc_gfm": "<p>Enable/disable Sidecar (iPad as second display)</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Toggler.spoon/init.lua",
+        "lineno": "38",
+        "name": "toggleSidecar",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "Toggler:toggleSidecar()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "Toggler",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
     "Method": [],
     "Variable": [],
     "desc": "Automatically stop/start music and increase/decrease volume when entering/leaving a video conference",

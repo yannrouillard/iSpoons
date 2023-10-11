@@ -63,6 +63,23 @@
     "type": "Method"
   },
   {
+    "desc": "Export various toggle methods",
+    "name": "Toggler",
+    "type": "Module"
+  },
+  {
+    "desc": "Binds hotkeys to Toggler methods",
+    "module": "Toggler",
+    "name": "bindHotkeys",
+    "type": "Method"
+  },
+  {
+    "desc": "Enable/disable Sidecar (iPad as second display)",
+    "module": "Toggler",
+    "name": "toggleSidecar",
+    "type": "Method"
+  },
+  {
     "desc": "Automatically stop/start music and increase/decrease volume when entering/leaving a video conference",
     "name": "VideoConfAutoSound",
     "type": "Module"
