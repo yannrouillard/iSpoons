@@ -84,6 +84,177 @@
     "Function": [],
     "Method": [
       {
+        "def": "Iterm2:closeMatchinTabs(workingDirectoryPrefix)",
+        "def_gfm": "Iterm2:closeMatchinTabs(workingDirectoryPrefix)",
+        "desc": "Close all tabs whose working directory starts with the given prefix",
+        "desc_gfm": "<p>Close all tabs whose working directory starts with the given prefix</p>\n",
+        "doc": "Close all tabs whose working directory starts with the given prefix\n\nParameters:\n * the absolute path to a directory prefix",
+        "doc_gfm": "<p>Close all tabs whose working directory starts with the given prefix</p>\n<p>Parameters:</p>\n<ul>\n<li>the absolute path to a directory prefix</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Iterm2.spoon/init.lua",
+        "lineno": "70",
+        "name": "closeMatchinTabs",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * the absolute path to a directory prefix"
+        ],
+        "parameters_gfm": "<ul>\n<li>the absolute path to a directory prefix</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "Iterm2:closeMatchinTabs(workingDirectoryPrefix)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Iterm2:getActiveTab(mapping)",
+        "def_gfm": "Iterm2:getActiveTab(mapping)",
+        "desc": "Return information about the currently active tab in iTerm2",
+        "desc_gfm": "<p>Return information about the currently active tab in iTerm2</p>\n",
+        "doc": "Return information about the currently active tab in iTerm2\n\nParameters:\n * None\n\nReturns:\n * A Table containing the following information about the tab\n   - working_directory: The working directory of the tab\n   - title: the title of the tab\n   - id: the id of the tab  \n    ",
+        "doc_gfm": "<p>Return information about the currently active tab in iTerm2</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>A Table containing the following information about the tab<ul>\n<li>working_directory: The working directory of the tab</li>\n<li>title: the title of the tab</li>\n<li>id: the id of the tab</li>\n</ul>\n</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Iterm2.spoon/init.lua",
+        "lineno": "53",
+        "name": "getActiveTab",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * A Table containing the following information about the tab",
+          "   - working_directory: The working directory of the tab",
+          "   - title: the title of the tab",
+          "   - id: the id of the tab  ",
+          "    "
+        ],
+        "returns_gfm": "<ul>\n<li>A Table containing the following information about the tab<ul>\n<li>working_directory: The working directory of the tab</li>\n<li>title: the title of the tab</li>\n<li>id: the id of the tab</li>\n</ul>\n</li>\n</ul>\n",
+        "signature": "Iterm2:getActiveTab(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Iterm2:openOrActivateTab(workingDirectory)",
+        "def_gfm": "Iterm2:openOrActivateTab(workingDirectory)",
+        "desc": "Open a new tab or activate an existing one with the given working directory",
+        "desc_gfm": "<p>Open a new tab or activate an existing one with the given working directory</p>\n",
+        "doc": "Open a new tab or activate an existing one with the given working directory\n\nParameters:\n * the absolute path to a directory",
+        "doc_gfm": "<p>Open a new tab or activate an existing one with the given working directory</p>\n<p>Parameters:</p>\n<ul>\n<li>the absolute path to a directory</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Iterm2.spoon/init.lua",
+        "lineno": "82",
+        "name": "openOrActivateTab",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * the absolute path to a directory"
+        ],
+        "parameters_gfm": "<ul>\n<li>the absolute path to a directory</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "Iterm2:openOrActivateTab(workingDirectory)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Provides helper functions to interact with iTerm2 through its AppleScript API.",
+    "desc_gfm": "<p>Provides helper functions to interact with iTerm2 through its AppleScript API.</p>\n",
+    "doc": "Provides helper functions to interact with iTerm2 through its AppleScript API.\n\nIt requires the installation of the AutoLaunch script hammerspoon_interface.py\nin iTerm2. This can be done by running the following command:\n```\n  ln -s ~/.hammerspoon/Spoons/Iterm2.spoon/hammerspoon_interface.py \\\n        ~/\"Application Support/iTerm2/Scripts/AutoLaunch/hammerspoon_interface.py\"\n``` ",
+    "doc_gfm": "<p>Provides helper functions to interact with iTerm2 through its AppleScript API.</p>\n<p>It requires the installation of the AutoLaunch script hammerspoon_interface.py\nin iTerm2. This can be done by running the following command:</p>\n\n<pre><code>  ln -s ~/.hammerspoon/Spoons/Iterm2.spoon/hammerspoon_interface.py \\\n        ~/&quot;Application Support/iTerm2/Scripts/AutoLaunch/hammerspoon_interface.py&quot;\n</code></pre>\n",
+    "items": [
+      {
+        "def": "Iterm2:closeMatchinTabs(workingDirectoryPrefix)",
+        "def_gfm": "Iterm2:closeMatchinTabs(workingDirectoryPrefix)",
+        "desc": "Close all tabs whose working directory starts with the given prefix",
+        "desc_gfm": "<p>Close all tabs whose working directory starts with the given prefix</p>\n",
+        "doc": "Close all tabs whose working directory starts with the given prefix\n\nParameters:\n * the absolute path to a directory prefix",
+        "doc_gfm": "<p>Close all tabs whose working directory starts with the given prefix</p>\n<p>Parameters:</p>\n<ul>\n<li>the absolute path to a directory prefix</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Iterm2.spoon/init.lua",
+        "lineno": "70",
+        "name": "closeMatchinTabs",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * the absolute path to a directory prefix"
+        ],
+        "parameters_gfm": "<ul>\n<li>the absolute path to a directory prefix</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "Iterm2:closeMatchinTabs(workingDirectoryPrefix)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Iterm2:getActiveTab(mapping)",
+        "def_gfm": "Iterm2:getActiveTab(mapping)",
+        "desc": "Return information about the currently active tab in iTerm2",
+        "desc_gfm": "<p>Return information about the currently active tab in iTerm2</p>\n",
+        "doc": "Return information about the currently active tab in iTerm2\n\nParameters:\n * None\n\nReturns:\n * A Table containing the following information about the tab\n   - working_directory: The working directory of the tab\n   - title: the title of the tab\n   - id: the id of the tab  \n    ",
+        "doc_gfm": "<p>Return information about the currently active tab in iTerm2</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>A Table containing the following information about the tab<ul>\n<li>working_directory: The working directory of the tab</li>\n<li>title: the title of the tab</li>\n<li>id: the id of the tab</li>\n</ul>\n</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Iterm2.spoon/init.lua",
+        "lineno": "53",
+        "name": "getActiveTab",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * A Table containing the following information about the tab",
+          "   - working_directory: The working directory of the tab",
+          "   - title: the title of the tab",
+          "   - id: the id of the tab  ",
+          "    "
+        ],
+        "returns_gfm": "<ul>\n<li>A Table containing the following information about the tab<ul>\n<li>working_directory: The working directory of the tab</li>\n<li>title: the title of the tab</li>\n<li>id: the id of the tab</li>\n</ul>\n</li>\n</ul>\n",
+        "signature": "Iterm2:getActiveTab(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Iterm2:openOrActivateTab(workingDirectory)",
+        "def_gfm": "Iterm2:openOrActivateTab(workingDirectory)",
+        "desc": "Open a new tab or activate an existing one with the given working directory",
+        "desc_gfm": "<p>Open a new tab or activate an existing one with the given working directory</p>\n",
+        "doc": "Open a new tab or activate an existing one with the given working directory\n\nParameters:\n * the absolute path to a directory",
+        "doc_gfm": "<p>Open a new tab or activate an existing one with the given working directory</p>\n<p>Parameters:</p>\n<ul>\n<li>the absolute path to a directory</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/Iterm2.spoon/init.lua",
+        "lineno": "82",
+        "name": "openOrActivateTab",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * the absolute path to a directory"
+        ],
+        "parameters_gfm": "<ul>\n<li>the absolute path to a directory</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "Iterm2:openOrActivateTab(workingDirectory)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "Iterm2",
+    "stripped_doc": "\nIt requires the installation of the AutoLaunch script hammerspoon_interface.py\nin iTerm2. This can be done by running the following command:\n```\n  ln -s ~/.hammerspoon/Spoons/Iterm2.spoon/hammerspoon_interface.py \\\n        ~/\"Application Support/iTerm2/Scripts/AutoLaunch/hammerspoon_interface.py\"\n``` ",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
         "def": "MoveWindowsOnScreens:bindHotkeys(mapping) -> self",
         "def_gfm": "MoveWindowsOnScreens:bindHotkeys(mapping) -&gt; self",
         "desc": "Binds hotkeys for MoveWindowsOnScreens",
@@ -621,6 +792,191 @@
     "doc_gfm": "<p>Automatically stop/start music and increase/decrease volume when entering/leaving a video conference</p>\n",
     "items": [],
     "name": "VideoConfAutoSound",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "VsCode.closeMatchingWindows(workingDirectoryPrefix)",
+        "def_gfm": "VsCode.closeMatchingWindows(workingDirectoryPrefix)",
+        "desc": "Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.",
+        "desc_gfm": "<p>Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.</p>\n",
+        "doc": "Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.\n\nParameters:\n * workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window.\n\nReturns:\n * None",
+        "doc_gfm": "<p>Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.</p>\n<p>Parameters:</p>\n<ul>\n<li>workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window.</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/VsCode.spoon/init.lua",
+        "lineno": "100",
+        "name": "closeMatchingWindows",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window."
+        ],
+        "parameters_gfm": "<ul>\n<li>workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window.</li>\n</ul>\n",
+        "returns": [
+          " * None"
+        ],
+        "returns_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "signature": "VsCode.closeMatchingWindows(workingDirectoryPrefix)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "VsCode.getWindowInfo(window)",
+        "def_gfm": "VsCode.getWindowInfo(window)",
+        "desc": "Extracts information about the specified Visual Studio Code window.",
+        "desc_gfm": "<p>Extracts information about the specified Visual Studio Code window.</p>\n",
+        "doc": "Extracts information about the specified Visual Studio Code window.\n\nParameters:\n * window - The window to extract information from.\n\nReturns:\n * A table containing the following information about the window:\n   - window: The window object\n   - workspaceFolder: the absolute path to the workspace folder of the window\n   - filename: the name of the file opened in the window (or nil if no file is opened)",
+        "doc_gfm": "<p>Extracts information about the specified Visual Studio Code window.</p>\n<p>Parameters:</p>\n<ul>\n<li>window - The window to extract information from.</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>A table containing the following information about the window:<ul>\n<li>window: The window object</li>\n<li>workspaceFolder: the absolute path to the workspace folder of the window</li>\n<li>filename: the name of the file opened in the window (or nil if no file is opened)</li>\n</ul>\n</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/VsCode.spoon/init.lua",
+        "lineno": "61",
+        "name": "getWindowInfo",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * window - The window to extract information from."
+        ],
+        "parameters_gfm": "<ul>\n<li>window - The window to extract information from.</li>\n</ul>\n",
+        "returns": [
+          " * A table containing the following information about the window:",
+          "   - window: The window object",
+          "   - workspaceFolder: the absolute path to the workspace folder of the window",
+          "   - filename: the name of the file opened in the window (or nil if no file is opened)"
+        ],
+        "returns_gfm": "<ul>\n<li>A table containing the following information about the window:<ul>\n<li>window: The window object</li>\n<li>workspaceFolder: the absolute path to the workspace folder of the window</li>\n<li>filename: the name of the file opened in the window (or nil if no file is opened)</li>\n</ul>\n</li>\n</ul>\n",
+        "signature": "VsCode.getWindowInfo(window)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "VsCode.listWindows()",
+        "def_gfm": "VsCode.listWindows()",
+        "desc": "Returns a list of all Visual Code windows with some additional information",
+        "desc_gfm": "<p>Returns a list of all Visual Code windows with some additional information</p>\n",
+        "doc": "Returns a list of all Visual Code windows with some additional information\n\nParameters:\n * None\n\nReturns:\n * A table containing the list of Visual Studio Code window with the following \n   information about all Code windows:\n   - window: The window object\n   - workspaceFolder: the absolute path to the workspace folder of the window\n   - filename: the name of the file opened in the window (or nil if no file is opened)",
+        "doc_gfm": "<p>Returns a list of all Visual Code windows with some additional information</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>A table containing the list of Visual Studio Code window with the following \ninformation about all Code windows:<ul>\n<li>window: The window object</li>\n<li>workspaceFolder: the absolute path to the workspace folder of the window</li>\n<li>filename: the name of the file opened in the window (or nil if no file is opened)</li>\n</ul>\n</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/VsCode.spoon/init.lua",
+        "lineno": "77",
+        "name": "listWindows",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * A table containing the list of Visual Studio Code window with the following ",
+          "   information about all Code windows:",
+          "   - window: The window object",
+          "   - workspaceFolder: the absolute path to the workspace folder of the window",
+          "   - filename: the name of the file opened in the window (or nil if no file is opened)"
+        ],
+        "returns_gfm": "<ul>\n<li>A table containing the list of Visual Studio Code window with the following \ninformation about all Code windows:<ul>\n<li>window: The window object</li>\n<li>workspaceFolder: the absolute path to the workspace folder of the window</li>\n<li>filename: the name of the file opened in the window (or nil if no file is opened)</li>\n</ul>\n</li>\n</ul>\n",
+        "signature": "VsCode.listWindows()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Provides helper functions to interact with iTerm2 through its AppleScript API.",
+    "desc_gfm": "<p>Provides helper functions to interact with iTerm2 through its AppleScript API.</p>\n",
+    "doc": "Provides helper functions to interact with iTerm2 through its AppleScript API.\n",
+    "doc_gfm": "<p>Provides helper functions to interact with iTerm2 through its AppleScript API.</p>\n",
+    "items": [
+      {
+        "def": "VsCode.closeMatchingWindows(workingDirectoryPrefix)",
+        "def_gfm": "VsCode.closeMatchingWindows(workingDirectoryPrefix)",
+        "desc": "Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.",
+        "desc_gfm": "<p>Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.</p>\n",
+        "doc": "Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.\n\nParameters:\n * workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window.\n\nReturns:\n * None",
+        "doc_gfm": "<p>Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.</p>\n<p>Parameters:</p>\n<ul>\n<li>workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window.</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>None</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/VsCode.spoon/init.lua",
+        "lineno": "100",
+        "name": "closeMatchingWindows",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window."
+        ],
+        "parameters_gfm": "<ul>\n<li>workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window.</li>\n</ul>\n",
+        "returns": [
+          " * None"
+        ],
+        "returns_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "signature": "VsCode.closeMatchingWindows(workingDirectoryPrefix)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "VsCode.getWindowInfo(window)",
+        "def_gfm": "VsCode.getWindowInfo(window)",
+        "desc": "Extracts information about the specified Visual Studio Code window.",
+        "desc_gfm": "<p>Extracts information about the specified Visual Studio Code window.</p>\n",
+        "doc": "Extracts information about the specified Visual Studio Code window.\n\nParameters:\n * window - The window to extract information from.\n\nReturns:\n * A table containing the following information about the window:\n   - window: The window object\n   - workspaceFolder: the absolute path to the workspace folder of the window\n   - filename: the name of the file opened in the window (or nil if no file is opened)",
+        "doc_gfm": "<p>Extracts information about the specified Visual Studio Code window.</p>\n<p>Parameters:</p>\n<ul>\n<li>window - The window to extract information from.</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>A table containing the following information about the window:<ul>\n<li>window: The window object</li>\n<li>workspaceFolder: the absolute path to the workspace folder of the window</li>\n<li>filename: the name of the file opened in the window (or nil if no file is opened)</li>\n</ul>\n</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/VsCode.spoon/init.lua",
+        "lineno": "61",
+        "name": "getWindowInfo",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * window - The window to extract information from."
+        ],
+        "parameters_gfm": "<ul>\n<li>window - The window to extract information from.</li>\n</ul>\n",
+        "returns": [
+          " * A table containing the following information about the window:",
+          "   - window: The window object",
+          "   - workspaceFolder: the absolute path to the workspace folder of the window",
+          "   - filename: the name of the file opened in the window (or nil if no file is opened)"
+        ],
+        "returns_gfm": "<ul>\n<li>A table containing the following information about the window:<ul>\n<li>window: The window object</li>\n<li>workspaceFolder: the absolute path to the workspace folder of the window</li>\n<li>filename: the name of the file opened in the window (or nil if no file is opened)</li>\n</ul>\n</li>\n</ul>\n",
+        "signature": "VsCode.getWindowInfo(window)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "VsCode.listWindows()",
+        "def_gfm": "VsCode.listWindows()",
+        "desc": "Returns a list of all Visual Code windows with some additional information",
+        "desc_gfm": "<p>Returns a list of all Visual Code windows with some additional information</p>\n",
+        "doc": "Returns a list of all Visual Code windows with some additional information\n\nParameters:\n * None\n\nReturns:\n * A table containing the list of Visual Studio Code window with the following \n   information about all Code windows:\n   - window: The window object\n   - workspaceFolder: the absolute path to the workspace folder of the window\n   - filename: the name of the file opened in the window (or nil if no file is opened)",
+        "doc_gfm": "<p>Returns a list of all Visual Code windows with some additional information</p>\n<p>Parameters:</p>\n<ul>\n<li>None</li>\n</ul>\n<p>Returns:</p>\n<ul>\n<li>A table containing the list of Visual Studio Code window with the following \ninformation about all Code windows:<ul>\n<li>window: The window object</li>\n<li>workspaceFolder: the absolute path to the workspace folder of the window</li>\n<li>filename: the name of the file opened in the window (or nil if no file is opened)</li>\n</ul>\n</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/VsCode.spoon/init.lua",
+        "lineno": "77",
+        "name": "listWindows",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * None"
+        ],
+        "parameters_gfm": "<ul>\n<li>None</li>\n</ul>\n",
+        "returns": [
+          " * A table containing the list of Visual Studio Code window with the following ",
+          "   information about all Code windows:",
+          "   - window: The window object",
+          "   - workspaceFolder: the absolute path to the workspace folder of the window",
+          "   - filename: the name of the file opened in the window (or nil if no file is opened)"
+        ],
+        "returns_gfm": "<ul>\n<li>A table containing the list of Visual Studio Code window with the following \ninformation about all Code windows:<ul>\n<li>window: The window object</li>\n<li>workspaceFolder: the absolute path to the workspace folder of the window</li>\n<li>filename: the name of the file opened in the window (or nil if no file is opened)</li>\n</ul>\n</li>\n</ul>\n",
+        "signature": "VsCode.listWindows()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "VsCode",
     "stripped_doc": "",
     "submodules": [],
     "type": "Module"

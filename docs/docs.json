@@ -72,6 +72,139 @@
     "Function": [],
     "Method": [
       {
+        "def": "Iterm2:closeMatchinTabs(workingDirectoryPrefix)",
+        "desc": "Close all tabs whose working directory starts with the given prefix",
+        "doc": "Close all tabs whose working directory starts with the given prefix\n\nParameters:\n * the absolute path to a directory prefix",
+        "examples": [],
+        "file": "Source/Iterm2.spoon/init.lua",
+        "lineno": "70",
+        "name": "closeMatchinTabs",
+        "notes": [],
+        "parameters": [
+          " * the absolute path to a directory prefix"
+        ],
+        "returns": [],
+        "signature": "Iterm2:closeMatchinTabs(workingDirectoryPrefix)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Iterm2:getActiveTab(mapping)",
+        "desc": "Return information about the currently active tab in iTerm2",
+        "doc": "Return information about the currently active tab in iTerm2\n\nParameters:\n * None\n\nReturns:\n * A Table containing the following information about the tab\n   - working_directory: The working directory of the tab\n   - title: the title of the tab\n   - id: the id of the tab  \n    ",
+        "examples": [],
+        "file": "Source/Iterm2.spoon/init.lua",
+        "lineno": "53",
+        "name": "getActiveTab",
+        "notes": [],
+        "parameters": [
+          " * None"
+        ],
+        "returns": [
+          " * A Table containing the following information about the tab",
+          "   - working_directory: The working directory of the tab",
+          "   - title: the title of the tab",
+          "   - id: the id of the tab  ",
+          "    "
+        ],
+        "signature": "Iterm2:getActiveTab(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Iterm2:openOrActivateTab(workingDirectory)",
+        "desc": "Open a new tab or activate an existing one with the given working directory",
+        "doc": "Open a new tab or activate an existing one with the given working directory\n\nParameters:\n * the absolute path to a directory",
+        "examples": [],
+        "file": "Source/Iterm2.spoon/init.lua",
+        "lineno": "82",
+        "name": "openOrActivateTab",
+        "notes": [],
+        "parameters": [
+          " * the absolute path to a directory"
+        ],
+        "returns": [],
+        "signature": "Iterm2:openOrActivateTab(workingDirectory)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Provides helper functions to interact with iTerm2 through its AppleScript API.",
+    "doc": "Provides helper functions to interact with iTerm2 through its AppleScript API.\n\nIt requires the installation of the AutoLaunch script hammerspoon_interface.py\nin iTerm2. This can be done by running the following command:\n```\n  ln -s ~/.hammerspoon/Spoons/Iterm2.spoon/hammerspoon_interface.py \\\n        ~/\"Application Support/iTerm2/Scripts/AutoLaunch/hammerspoon_interface.py\"\n``` ",
+    "items": [
+      {
+        "def": "Iterm2:closeMatchinTabs(workingDirectoryPrefix)",
+        "desc": "Close all tabs whose working directory starts with the given prefix",
+        "doc": "Close all tabs whose working directory starts with the given prefix\n\nParameters:\n * the absolute path to a directory prefix",
+        "examples": [],
+        "file": "Source/Iterm2.spoon/init.lua",
+        "lineno": "70",
+        "name": "closeMatchinTabs",
+        "notes": [],
+        "parameters": [
+          " * the absolute path to a directory prefix"
+        ],
+        "returns": [],
+        "signature": "Iterm2:closeMatchinTabs(workingDirectoryPrefix)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Iterm2:getActiveTab(mapping)",
+        "desc": "Return information about the currently active tab in iTerm2",
+        "doc": "Return information about the currently active tab in iTerm2\n\nParameters:\n * None\n\nReturns:\n * A Table containing the following information about the tab\n   - working_directory: The working directory of the tab\n   - title: the title of the tab\n   - id: the id of the tab  \n    ",
+        "examples": [],
+        "file": "Source/Iterm2.spoon/init.lua",
+        "lineno": "53",
+        "name": "getActiveTab",
+        "notes": [],
+        "parameters": [
+          " * None"
+        ],
+        "returns": [
+          " * A Table containing the following information about the tab",
+          "   - working_directory: The working directory of the tab",
+          "   - title: the title of the tab",
+          "   - id: the id of the tab  ",
+          "    "
+        ],
+        "signature": "Iterm2:getActiveTab(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "Iterm2:openOrActivateTab(workingDirectory)",
+        "desc": "Open a new tab or activate an existing one with the given working directory",
+        "doc": "Open a new tab or activate an existing one with the given working directory\n\nParameters:\n * the absolute path to a directory",
+        "examples": [],
+        "file": "Source/Iterm2.spoon/init.lua",
+        "lineno": "82",
+        "name": "openOrActivateTab",
+        "notes": [],
+        "parameters": [
+          " * the absolute path to a directory"
+        ],
+        "returns": [],
+        "signature": "Iterm2:openOrActivateTab(workingDirectory)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "Iterm2",
+    "stripped_doc": "\nIt requires the installation of the AutoLaunch script hammerspoon_interface.py\nin iTerm2. This can be done by running the following command:\n```\n  ln -s ~/.hammerspoon/Spoons/Iterm2.spoon/hammerspoon_interface.py \\\n        ~/\"Application Support/iTerm2/Scripts/AutoLaunch/hammerspoon_interface.py\"\n``` ",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
         "def": "MoveWindowsOnScreens:bindHotkeys(mapping) -> self",
         "desc": "Binds hotkeys for MoveWindowsOnScreens",
         "doc": "Binds hotkeys for MoveWindowsOnScreens\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for each available operation\n\nReturns:\n * The MoveWindowsOnScreens object",
@@ -481,6 +614,153 @@
     "doc": "Automatically stop/start music and increase/decrease volume when entering/leaving a video conference\n",
     "items": [],
     "name": "VideoConfAutoSound",
+    "stripped_doc": "",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "VsCode.closeMatchingWindows(workingDirectoryPrefix)",
+        "desc": "Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.",
+        "doc": "Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.\n\nParameters:\n * workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window.\n\nReturns:\n * None",
+        "examples": [],
+        "file": "Source/VsCode.spoon/init.lua",
+        "lineno": "100",
+        "name": "closeMatchingWindows",
+        "notes": [],
+        "parameters": [
+          " * workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window."
+        ],
+        "returns": [
+          " * None"
+        ],
+        "signature": "VsCode.closeMatchingWindows(workingDirectoryPrefix)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "VsCode.getWindowInfo(window)",
+        "desc": "Extracts information about the specified Visual Studio Code window.",
+        "doc": "Extracts information about the specified Visual Studio Code window.\n\nParameters:\n * window - The window to extract information from.\n\nReturns:\n * A table containing the following information about the window:\n   - window: The window object\n   - workspaceFolder: the absolute path to the workspace folder of the window\n   - filename: the name of the file opened in the window (or nil if no file is opened)",
+        "examples": [],
+        "file": "Source/VsCode.spoon/init.lua",
+        "lineno": "61",
+        "name": "getWindowInfo",
+        "notes": [],
+        "parameters": [
+          " * window - The window to extract information from."
+        ],
+        "returns": [
+          " * A table containing the following information about the window:",
+          "   - window: The window object",
+          "   - workspaceFolder: the absolute path to the workspace folder of the window",
+          "   - filename: the name of the file opened in the window (or nil if no file is opened)"
+        ],
+        "signature": "VsCode.getWindowInfo(window)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "VsCode.listWindows()",
+        "desc": "Returns a list of all Visual Code windows with some additional information",
+        "doc": "Returns a list of all Visual Code windows with some additional information\n\nParameters:\n * None\n\nReturns:\n * A table containing the list of Visual Studio Code window with the following \n   information about all Code windows:\n   - window: The window object\n   - workspaceFolder: the absolute path to the workspace folder of the window\n   - filename: the name of the file opened in the window (or nil if no file is opened)",
+        "examples": [],
+        "file": "Source/VsCode.spoon/init.lua",
+        "lineno": "77",
+        "name": "listWindows",
+        "notes": [],
+        "parameters": [
+          " * None"
+        ],
+        "returns": [
+          " * A table containing the list of Visual Studio Code window with the following ",
+          "   information about all Code windows:",
+          "   - window: The window object",
+          "   - workspaceFolder: the absolute path to the workspace folder of the window",
+          "   - filename: the name of the file opened in the window (or nil if no file is opened)"
+        ],
+        "signature": "VsCode.listWindows()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Provides helper functions to interact with iTerm2 through its AppleScript API.",
+    "doc": "Provides helper functions to interact with iTerm2 through its AppleScript API.\n",
+    "items": [
+      {
+        "def": "VsCode.closeMatchingWindows(workingDirectoryPrefix)",
+        "desc": "Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.",
+        "doc": "Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.\n\nParameters:\n * workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window.\n\nReturns:\n * None",
+        "examples": [],
+        "file": "Source/VsCode.spoon/init.lua",
+        "lineno": "100",
+        "name": "closeMatchingWindows",
+        "notes": [],
+        "parameters": [
+          " * workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window."
+        ],
+        "returns": [
+          " * None"
+        ],
+        "signature": "VsCode.closeMatchingWindows(workingDirectoryPrefix)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "VsCode.getWindowInfo(window)",
+        "desc": "Extracts information about the specified Visual Studio Code window.",
+        "doc": "Extracts information about the specified Visual Studio Code window.\n\nParameters:\n * window - The window to extract information from.\n\nReturns:\n * A table containing the following information about the window:\n   - window: The window object\n   - workspaceFolder: the absolute path to the workspace folder of the window\n   - filename: the name of the file opened in the window (or nil if no file is opened)",
+        "examples": [],
+        "file": "Source/VsCode.spoon/init.lua",
+        "lineno": "61",
+        "name": "getWindowInfo",
+        "notes": [],
+        "parameters": [
+          " * window - The window to extract information from."
+        ],
+        "returns": [
+          " * A table containing the following information about the window:",
+          "   - window: The window object",
+          "   - workspaceFolder: the absolute path to the workspace folder of the window",
+          "   - filename: the name of the file opened in the window (or nil if no file is opened)"
+        ],
+        "signature": "VsCode.getWindowInfo(window)",
+        "stripped_doc": "",
+        "type": "Method"
+      },
+      {
+        "def": "VsCode.listWindows()",
+        "desc": "Returns a list of all Visual Code windows with some additional information",
+        "doc": "Returns a list of all Visual Code windows with some additional information\n\nParameters:\n * None\n\nReturns:\n * A table containing the list of Visual Studio Code window with the following \n   information about all Code windows:\n   - window: The window object\n   - workspaceFolder: the absolute path to the workspace folder of the window\n   - filename: the name of the file opened in the window (or nil if no file is opened)",
+        "examples": [],
+        "file": "Source/VsCode.spoon/init.lua",
+        "lineno": "77",
+        "name": "listWindows",
+        "notes": [],
+        "parameters": [
+          " * None"
+        ],
+        "returns": [
+          " * A table containing the list of Visual Studio Code window with the following ",
+          "   information about all Code windows:",
+          "   - window: The window object",
+          "   - workspaceFolder: the absolute path to the workspace folder of the window",
+          "   - filename: the name of the file opened in the window (or nil if no file is opened)"
+        ],
+        "signature": "VsCode.listWindows()",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "VsCode",
     "stripped_doc": "",
     "submodules": [],
     "type": "Module"

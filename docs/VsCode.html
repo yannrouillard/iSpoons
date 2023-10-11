@@ -1,0 +1,155 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hammerspoon docs: VsCode</title>
+    <style type="text/css">
+      a { text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      th { background-color: #DDDDDD; vertical-align: top; padding: 3px; }
+      td { width: 100%; background-color: #EEEEEE; vertical-align: top; padding: 3px; }
+      table { width: 100% ; border: 1px solid #0; text-align: left; }
+      section > table table td { width: 0; }
+    </style>
+    <link rel="stylesheet" href="docs.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="./index.html">docs</a> &raquo; VsCode</h1>
+      <p>Provides helper functions to interact with iTerm2 through its AppleScript API.</p>
+
+      </header>
+      <h3>API Overview</h3>
+      <ul>
+        <li>Methods - API calls which can only be made on an object returned by a constructor</li>
+          <ul>
+            <li><a href="#closeMatchingWindows">closeMatchingWindows</a></li>
+            <li><a href="#getWindowInfo">getWindowInfo</a></li>
+            <li><a href="#listWindows">listWindows</a></li>
+          </ul>
+      </ul>
+      <h3>API Documentation</h3>
+        <h4 class="documentation-section">Methods</h4>
+          <section id="closeMatchingWindows">
+            <a name="//apple_ref/cpp/Method/closeMatchingWindows" class="dashAnchor"></a>
+            <h5><a href="#closeMatchingWindows">closeMatchingWindows</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>VsCode.closeMatchingWindows(workingDirectoryPrefix)</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>workingDirectoryPrefix - A string containing the prefix to match against the workspace folder of each window.</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td><ul>
+<li>None</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/VsCode.spoon/init.lua#L100">Source/VsCode.spoon/init.lua line 100</a></td>
+              </tr>
+            </table>
+          </section>
+          <section id="getWindowInfo">
+            <a name="//apple_ref/cpp/Method/getWindowInfo" class="dashAnchor"></a>
+            <h5><a href="#getWindowInfo">getWindowInfo</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>VsCode.getWindowInfo(window)</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Extracts information about the specified Visual Studio Code window.</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>window - The window to extract information from.</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td><ul>
+<li>A table containing the following information about the window:<ul>
+<li>window: The window object</li>
+<li>workspaceFolder: the absolute path to the workspace folder of the window</li>
+<li>filename: the name of the file opened in the window (or nil if no file is opened)</li>
+</ul>
+</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/VsCode.spoon/init.lua#L61">Source/VsCode.spoon/init.lua line 61</a></td>
+              </tr>
+            </table>
+          </section>
+          <section id="listWindows">
+            <a name="//apple_ref/cpp/Method/listWindows" class="dashAnchor"></a>
+            <h5><a href="#listWindows">listWindows</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>VsCode.listWindows()</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Returns a list of all Visual Code windows with some additional information</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>None</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td><ul>
+<li>A table containing the list of Visual Studio Code window with the following 
+information about all Code windows:<ul>
+<li>window: The window object</li>
+<li>workspaceFolder: the absolute path to the workspace folder of the window</li>
+<li>filename: the name of the file opened in the window (or nil if no file is opened)</li>
+</ul>
+</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/VsCode.spoon/init.lua#L77">Source/VsCode.spoon/init.lua line 77</a></td>
+              </tr>
+            </table>
+          </section>
+  </body>
+</html>

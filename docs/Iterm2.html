@@ -1,0 +1,149 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hammerspoon docs: Iterm2</title>
+    <style type="text/css">
+      a { text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      th { background-color: #DDDDDD; vertical-align: top; padding: 3px; }
+      td { width: 100%; background-color: #EEEEEE; vertical-align: top; padding: 3px; }
+      table { width: 100% ; border: 1px solid #0; text-align: left; }
+      section > table table td { width: 0; }
+    </style>
+    <link rel="stylesheet" href="docs.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="./index.html">docs</a> &raquo; Iterm2</h1>
+      <p>Provides helper functions to interact with iTerm2 through its AppleScript API.</p>
+<p>It requires the installation of the AutoLaunch script hammerspoon_interface.py
+in iTerm2. This can be done by running the following command:</p>
+
+<pre><code>  ln -s ~/.hammerspoon/Spoons/Iterm2.spoon/hammerspoon_interface.py \
+        ~/&quot;Application Support/iTerm2/Scripts/AutoLaunch/hammerspoon_interface.py&quot;
+</code></pre>
+
+      </header>
+      <h3>API Overview</h3>
+      <ul>
+        <li>Methods - API calls which can only be made on an object returned by a constructor</li>
+          <ul>
+            <li><a href="#closeMatchinTabs">closeMatchinTabs</a></li>
+            <li><a href="#getActiveTab">getActiveTab</a></li>
+            <li><a href="#openOrActivateTab">openOrActivateTab</a></li>
+          </ul>
+      </ul>
+      <h3>API Documentation</h3>
+        <h4 class="documentation-section">Methods</h4>
+          <section id="closeMatchinTabs">
+            <a name="//apple_ref/cpp/Method/closeMatchinTabs" class="dashAnchor"></a>
+            <h5><a href="#closeMatchinTabs">closeMatchinTabs</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>Iterm2:closeMatchinTabs(workingDirectoryPrefix)</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Close all tabs whose working directory starts with the given prefix</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>the absolute path to a directory prefix</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td></td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/Iterm2.spoon/init.lua#L70">Source/Iterm2.spoon/init.lua line 70</a></td>
+              </tr>
+            </table>
+          </section>
+          <section id="getActiveTab">
+            <a name="//apple_ref/cpp/Method/getActiveTab" class="dashAnchor"></a>
+            <h5><a href="#getActiveTab">getActiveTab</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>Iterm2:getActiveTab(mapping)</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Return information about the currently active tab in iTerm2</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>None</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td><ul>
+<li>A Table containing the following information about the tab<ul>
+<li>working_directory: The working directory of the tab</li>
+<li>title: the title of the tab</li>
+<li>id: the id of the tab</li>
+</ul>
+</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/Iterm2.spoon/init.lua#L53">Source/Iterm2.spoon/init.lua line 53</a></td>
+              </tr>
+            </table>
+          </section>
+          <section id="openOrActivateTab">
+            <a name="//apple_ref/cpp/Method/openOrActivateTab" class="dashAnchor"></a>
+            <h5><a href="#openOrActivateTab">openOrActivateTab</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>Iterm2:openOrActivateTab(workingDirectory)</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Open a new tab or activate an existing one with the given working directory</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>the absolute path to a directory</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td></td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/Iterm2.spoon/init.lua#L82">Source/Iterm2.spoon/init.lua line 82</a></td>
+              </tr>
+            </table>
+          </section>
+  </body>
+</html>

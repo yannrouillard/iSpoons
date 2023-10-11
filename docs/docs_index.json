@@ -16,6 +16,29 @@
     "type": "Module"
   },
   {
+    "desc": "Provides helper functions to interact with iTerm2 through its AppleScript API.",
+    "name": "Iterm2",
+    "type": "Module"
+  },
+  {
+    "desc": "Close all tabs whose working directory starts with the given prefix",
+    "module": "Iterm2",
+    "name": "closeMatchinTabs",
+    "type": "Method"
+  },
+  {
+    "desc": "Return information about the currently active tab in iTerm2",
+    "module": "Iterm2",
+    "name": "getActiveTab",
+    "type": "Method"
+  },
+  {
+    "desc": "Open a new tab or activate an existing one with the given working directory",
+    "module": "Iterm2",
+    "name": "openOrActivateTab",
+    "type": "Method"
+  },
+  {
     "desc": "Provide easy window functions and hotkeys to move window between screens",
     "name": "MoveWindowsOnScreens",
     "type": "Module"
@@ -94,5 +117,28 @@
     "desc": "Automatically stop/start music and increase/decrease volume when entering/leaving a video conference",
     "name": "VideoConfAutoSound",
     "type": "Module"
+  },
+  {
+    "desc": "Provides helper functions to interact with iTerm2 through its AppleScript API.",
+    "name": "VsCode",
+    "type": "Module"
+  },
+  {
+    "desc": "Closes all Visual Studio Code windows whose workspace folder matches the specified prefix.",
+    "module": "VsCode",
+    "name": "closeMatchingWindows",
+    "type": "Method"
+  },
+  {
+    "desc": "Extracts information about the specified Visual Studio Code window.",
+    "module": "VsCode",
+    "name": "getWindowInfo",
+    "type": "Method"
+  },
+  {
+    "desc": "Returns a list of all Visual Code windows with some additional information",
+    "module": "VsCode",
+    "name": "listWindows",
+    "type": "Method"
   }
 ]
