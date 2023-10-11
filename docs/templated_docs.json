@@ -431,6 +431,73 @@
     "Function": [],
     "Method": [
       {
+        "def": "SmartAppSwitcher:bindHotkeys(mapping)",
+        "def_gfm": "SmartAppSwitcher:bindHotkeys(mapping)",
+        "desc": "Binds hotkey to each application",
+        "desc_gfm": "<p>Binds hotkey to each application</p>\n",
+        "doc": "Binds hotkey to each application\n\nParameters:\n * mapping - A table containing single characters with their associated app\n",
+        "doc_gfm": "<p>Binds hotkey to each application</p>\n<p>Parameters:</p>\n<ul>\n<li>mapping - A table containing single characters with their associated app</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/SmartAppSwitcher.spoon/init.lua",
+        "lineno": "150",
+        "name": "bindHotkeys",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * mapping - A table containing single characters with their associated app"
+        ],
+        "parameters_gfm": "<ul>\n<li>mapping - A table containing single characters with their associated app</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "SmartAppSwitcher:bindHotkeys(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Easily switch between your most used applications with one key assigned to each app,",
+    "desc_gfm": "<p>Easily switch between your most used applications with one key assigned to each app,</p>\n",
+    "doc": "Easily switch between your most used applications with one key assigned to each app,\nand automatically activate the most relevant window/tab in the target application\nwhen possible.\n\nFor instance, when switching from iTerm2 to Visual Studio Code while on a source\ncode repository, SmartAppSwitcher will automatically activate or open a Visual Studio\nCode window on the source code repository.\n\nNotes:\n * The window/tab auto-select feature requires some helper spoons for eligible applications\n   (currently only iTerm2 and Visual Studio Code are supported)\n\nExamples configuration:\n```\nhs.loadSpoon(\"SmartAppSwitcher\")\nspoon.SmartAppSwitcher.modifier = {\"cmd\", \"alt\"}\nspoon.SmartAppSwitcher.helperSpoons = {\n  [\"iTerm\"] = spoon.Iterm2,\n  [\"Visual Studio Code\"] = spoon.VsCode\n}\nspoon.SmartAppSwitcher.bindHotkeys({\n  c = \"Visual Studio Code\",\n  o = \"Obsidian\",\n  f = \"Firefox\",\n  k = \"Slack\",\n  s = \"Spotify\",\n  i = \"iTerm\"\n})\n```\n",
+    "doc_gfm": "<p>Easily switch between your most used applications with one key assigned to each app,\nand automatically activate the most relevant window/tab in the target application\nwhen possible.</p>\n<p>For instance, when switching from iTerm2 to Visual Studio Code while on a source\ncode repository, SmartAppSwitcher will automatically activate or open a Visual Studio\nCode window on the source code repository.</p>\n<p>Notes:</p>\n<ul>\n<li>The window/tab auto-select feature requires some helper spoons for eligible applications\n(currently only iTerm2 and Visual Studio Code are supported)</li>\n</ul>\n<p>Examples configuration:</p>\n\n<pre><code>hs.loadSpoon(&quot;SmartAppSwitcher&quot;)\nspoon.SmartAppSwitcher.modifier = {&quot;cmd&quot;, &quot;alt&quot;}\nspoon.SmartAppSwitcher.helperSpoons = {\n  [&quot;iTerm&quot;] = spoon.Iterm2,\n  [&quot;Visual Studio Code&quot;] = spoon.VsCode\n}\nspoon.SmartAppSwitcher.bindHotkeys({\n  c = &quot;Visual Studio Code&quot;,\n  o = &quot;Obsidian&quot;,\n  f = &quot;Firefox&quot;,\n  k = &quot;Slack&quot;,\n  s = &quot;Spotify&quot;,\n  i = &quot;iTerm&quot;\n})\n</code></pre>\n",
+    "items": [
+      {
+        "def": "SmartAppSwitcher:bindHotkeys(mapping)",
+        "def_gfm": "SmartAppSwitcher:bindHotkeys(mapping)",
+        "desc": "Binds hotkey to each application",
+        "desc_gfm": "<p>Binds hotkey to each application</p>\n",
+        "doc": "Binds hotkey to each application\n\nParameters:\n * mapping - A table containing single characters with their associated app\n",
+        "doc_gfm": "<p>Binds hotkey to each application</p>\n<p>Parameters:</p>\n<ul>\n<li>mapping - A table containing single characters with their associated app</li>\n</ul>\n",
+        "examples": [],
+        "file": "Source/SmartAppSwitcher.spoon/init.lua",
+        "lineno": "150",
+        "name": "bindHotkeys",
+        "notes": [],
+        "notes_gfm": "",
+        "parameters": [
+          " * mapping - A table containing single characters with their associated app"
+        ],
+        "parameters_gfm": "<ul>\n<li>mapping - A table containing single characters with their associated app</li>\n</ul>\n",
+        "returns": [],
+        "returns_gfm": "",
+        "signature": "SmartAppSwitcher:bindHotkeys(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "SmartAppSwitcher",
+    "stripped_doc": "and automatically activate the most relevant window/tab in the target application\nwhen possible.\n\nFor instance, when switching from iTerm2 to Visual Studio Code while on a source\ncode repository, SmartAppSwitcher will automatically activate or open a Visual Studio\nCode window on the source code repository.\n\nNotes:\n * The window/tab auto-select feature requires some helper spoons for eligible applications\n   (currently only iTerm2 and Visual Studio Code are supported)\n\nExamples configuration:\n```\nhs.loadSpoon(\"SmartAppSwitcher\")\nspoon.SmartAppSwitcher.modifier = {\"cmd\", \"alt\"}\nspoon.SmartAppSwitcher.helperSpoons = {\n  [\"iTerm\"] = spoon.Iterm2,\n  [\"Visual Studio Code\"] = spoon.VsCode\n}\nspoon.SmartAppSwitcher.bindHotkeys({\n  c = \"Visual Studio Code\",\n  o = \"Obsidian\",\n  f = \"Firefox\",\n  k = \"Slack\",\n  s = \"Spotify\",\n  i = \"iTerm\"\n})\n```\n",
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
         "def": "Toggler:bindHotkeys(mapping) -> self",
         "def_gfm": "Toggler:bindHotkeys(mapping) -&gt; self",
         "desc": "Binds hotkeys to Toggler methods",

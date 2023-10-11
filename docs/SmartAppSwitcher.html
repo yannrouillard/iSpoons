@@ -1,0 +1,92 @@
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Hammerspoon docs: SmartAppSwitcher</title>
+    <style type="text/css">
+      a { text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      th { background-color: #DDDDDD; vertical-align: top; padding: 3px; }
+      td { width: 100%; background-color: #EEEEEE; vertical-align: top; padding: 3px; }
+      table { width: 100% ; border: 1px solid #0; text-align: left; }
+      section > table table td { width: 0; }
+    </style>
+    <link rel="stylesheet" href="docs.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="./index.html">docs</a> &raquo; SmartAppSwitcher</h1>
+      <p>Easily switch between your most used applications with one key assigned to each app,
+and automatically activate the most relevant window/tab in the target application
+when possible.</p>
+<p>For instance, when switching from iTerm2 to Visual Studio Code while on a source
+code repository, SmartAppSwitcher will automatically activate or open a Visual Studio
+Code window on the source code repository.</p>
+<p>Notes:</p>
+<ul>
+<li>The window/tab auto-select feature requires some helper spoons for eligible applications
+(currently only iTerm2 and Visual Studio Code are supported)</li>
+</ul>
+<p>Examples configuration:</p>
+
+<pre><code>hs.loadSpoon(&quot;SmartAppSwitcher&quot;)
+spoon.SmartAppSwitcher.modifier = {&quot;cmd&quot;, &quot;alt&quot;}
+spoon.SmartAppSwitcher.helperSpoons = {
+  [&quot;iTerm&quot;] = spoon.Iterm2,
+  [&quot;Visual Studio Code&quot;] = spoon.VsCode
+}
+spoon.SmartAppSwitcher.bindHotkeys({
+  c = &quot;Visual Studio Code&quot;,
+  o = &quot;Obsidian&quot;,
+  f = &quot;Firefox&quot;,
+  k = &quot;Slack&quot;,
+  s = &quot;Spotify&quot;,
+  i = &quot;iTerm&quot;
+})
+</code></pre>
+
+      </header>
+      <h3>API Overview</h3>
+      <ul>
+        <li>Methods - API calls which can only be made on an object returned by a constructor</li>
+          <ul>
+            <li><a href="#bindHotkeys">bindHotkeys</a></li>
+          </ul>
+      </ul>
+      <h3>API Documentation</h3>
+        <h4 class="documentation-section">Methods</h4>
+          <section id="bindHotkeys">
+            <a name="//apple_ref/cpp/Method/bindHotkeys" class="dashAnchor"></a>
+            <h5><a href="#bindHotkeys">bindHotkeys</a></h5>
+            <table>
+              <tr>
+                <th>Signature</th>
+                <td><code>SmartAppSwitcher:bindHotkeys(mapping)</code></td>
+              </tr>
+              <tr>
+                <th>Type</th>
+                <td>Method</td>
+              </tr>
+              <tr>
+                <th>Description</th>
+                <td><p>Binds hotkey to each application</p>
+</td>
+              </tr>
+              <tr>
+                  <th>Parameters</th>
+                  <td><ul>
+<li>mapping - A table containing single characters with their associated app</li>
+</ul>
+</td>
+              </tr>
+              <tr>
+                  <th>Returns</th>
+                  <td></td>
+              </tr>
+              <tr>
+                <th>Source</th>
+                <td><a href="https://github.com/yannrouillard/Spoons/blob/master/Source/SmartAppSwitcher.spoon/init.lua#L150">Source/SmartAppSwitcher.spoon/init.lua line 150</a></td>
+              </tr>
+            </table>
+          </section>
+  </body>
+</html>

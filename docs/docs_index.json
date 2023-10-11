@@ -63,6 +63,17 @@
     "type": "Method"
   },
   {
+    "desc": "Easily switch between your most used applications with one key assigned to each app,",
+    "name": "SmartAppSwitcher",
+    "type": "Module"
+  },
+  {
+    "desc": "Binds hotkey to each application",
+    "module": "SmartAppSwitcher",
+    "name": "bindHotkeys",
+    "type": "Method"
+  },
+  {
     "desc": "Export various toggle methods",
     "name": "Toggler",
     "type": "Module"
