@@ -1,0 +1,55 @@
+[
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "SmartAppSwitcher:bindHotkeys(mapping)",
+        "desc": "Binds hotkey to each application",
+        "doc": "Binds hotkey to each application\n\nParameters:\n * mapping - A table containing single characters with their associated app\n",
+        "examples": [],
+        "file": "Source/SmartAppSwitcher.spoon//init.lua",
+        "lineno": "150",
+        "name": "bindHotkeys",
+        "notes": [],
+        "parameters": [
+          " * mapping - A table containing single characters with their associated app"
+        ],
+        "returns": [],
+        "signature": "SmartAppSwitcher:bindHotkeys(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "Variable": [],
+    "desc": "Easily switch between your most used applications with one key assigned to each app,",
+    "doc": "Easily switch between your most used applications with one key assigned to each app,\nand automatically activate the most relevant window/tab in the target application\nwhen possible.\n\nFor instance, when switching from iTerm2 to Visual Studio Code while on a source\ncode repository, SmartAppSwitcher will automatically activate or open a Visual Studio\nCode window on the source code repository.\n\nNotes:\n * The window/tab auto-select feature requires some helper spoons for eligible applications\n   (currently only iTerm2 and Visual Studio Code are supported)\n\nExamples configuration:\n```\nhs.loadSpoon(\"SmartAppSwitcher\")\nspoon.SmartAppSwitcher.modifier = {\"cmd\", \"alt\"}\nspoon.SmartAppSwitcher.helperSpoons = {\n  [\"iTerm\"] = spoon.Iterm2,\n  [\"Visual Studio Code\"] = spoon.VsCode\n}\nspoon.SmartAppSwitcher.bindHotkeys({\n  c = \"Visual Studio Code\",\n  o = \"Obsidian\",\n  f = \"Firefox\",\n  k = \"Slack\",\n  s = \"Spotify\",\n  i = \"iTerm\"\n})\n```\n",
+    "items": [
+      {
+        "def": "SmartAppSwitcher:bindHotkeys(mapping)",
+        "desc": "Binds hotkey to each application",
+        "doc": "Binds hotkey to each application\n\nParameters:\n * mapping - A table containing single characters with their associated app\n",
+        "examples": [],
+        "file": "Source/SmartAppSwitcher.spoon//init.lua",
+        "lineno": "150",
+        "name": "bindHotkeys",
+        "notes": [],
+        "parameters": [
+          " * mapping - A table containing single characters with their associated app"
+        ],
+        "returns": [],
+        "signature": "SmartAppSwitcher:bindHotkeys(mapping)",
+        "stripped_doc": "",
+        "type": "Method"
+      }
+    ],
+    "name": "SmartAppSwitcher",
+    "stripped_doc": "and automatically activate the most relevant window/tab in the target application\nwhen possible.\n\nFor instance, when switching from iTerm2 to Visual Studio Code while on a source\ncode repository, SmartAppSwitcher will automatically activate or open a Visual Studio\nCode window on the source code repository.\n\nNotes:\n * The window/tab auto-select feature requires some helper spoons for eligible applications\n   (currently only iTerm2 and Visual Studio Code are supported)\n\nExamples configuration:\n```\nhs.loadSpoon(\"SmartAppSwitcher\")\nspoon.SmartAppSwitcher.modifier = {\"cmd\", \"alt\"}\nspoon.SmartAppSwitcher.helperSpoons = {\n  [\"iTerm\"] = spoon.Iterm2,\n  [\"Visual Studio Code\"] = spoon.VsCode\n}\nspoon.SmartAppSwitcher.bindHotkeys({\n  c = \"Visual Studio Code\",\n  o = \"Obsidian\",\n  f = \"Firefox\",\n  k = \"Slack\",\n  s = \"Spotify\",\n  i = \"iTerm\"\n})\n```\n",
+    "submodules": [],
+    "type": "Module"
+  }
+]
