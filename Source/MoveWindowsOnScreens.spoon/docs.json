@@ -13,7 +13,7 @@
         "doc": "Binds hotkeys for MoveWindowsOnScreens\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for each available operation\n\nReturns:\n * The MoveWindowsOnScreens object",
         "examples": [],
         "file": "Source/MoveWindowsOnScreens.spoon//init.lua",
-        "lineno": "156",
+        "lineno": "278",
         "name": "bindHotkeys",
         "notes": [],
         "parameters": [
@@ -32,7 +32,7 @@
         "doc": "Focus the window which is on the left scren\n\nParameters:\n * None\n",
         "examples": [],
         "file": "Source/MoveWindowsOnScreens.spoon//init.lua",
-        "lineno": "94",
+        "lineno": "178",
         "name": "focusWindowLeft",
         "notes": [],
         "parameters": [
@@ -49,7 +49,7 @@
         "doc": "Focus the window which is on the right scren\n\nParameters:\n * None\n",
         "examples": [],
         "file": "Source/MoveWindowsOnScreens.spoon//init.lua",
-        "lineno": "105",
+        "lineno": "193",
         "name": "focusWindowRight",
         "notes": [],
         "parameters": [
@@ -66,7 +66,7 @@
         "doc": "Move the current window on the left screen and maximize it\n\nParameters:\n * None\n",
         "examples": [],
         "file": "Source/MoveWindowsOnScreens.spoon//init.lua",
-        "lineno": "70",
+        "lineno": "146",
         "name": "moveWindowLeft",
         "notes": [],
         "parameters": [
@@ -83,7 +83,7 @@
         "doc": "Move the current window on the right screen and maximize it\n\nParameters:\n * None\n",
         "examples": [],
         "file": "Source/MoveWindowsOnScreens.spoon//init.lua",
-        "lineno": "82",
+        "lineno": "162",
         "name": "moveWindowRight",
         "notes": [],
         "parameters": [
@@ -100,7 +100,7 @@
         "doc": "Open a chooser to select a window to place on the right screen and maximize it\n\nParameters:\n * None\n",
         "examples": [],
         "file": "Source/MoveWindowsOnScreens.spoon//init.lua",
-        "lineno": "143",
+        "lineno": "233",
         "name": "placeSelectedWindowOnTheRight",
         "notes": [],
         "parameters": [
@@ -117,7 +117,7 @@
         "doc": "Switch the screen of the current window and the window of the left/right screen\n\nParameters:\n * None\n",
         "examples": [],
         "file": "Source/MoveWindowsOnScreens.spoon//init.lua",
-        "lineno": "116",
+        "lineno": "208",
         "name": "switchWindowLeftAndRight",
         "notes": [],
         "parameters": [
@@ -139,7 +139,7 @@
         "doc": "Binds hotkeys for MoveWindowsOnScreens\n\nParameters:\n * mapping - A table containing hotkey modifier/key details for each available operation\n\nReturns:\n * The MoveWindowsOnScreens object",
         "examples": [],
         "file": "Source/MoveWindowsOnScreens.spoon//init.lua",
-        "lineno": "156",
+        "lineno": "278",
         "name": "bindHotkeys",
         "notes": [],
         "parameters": [
@@ -158,7 +158,7 @@
         "doc": "Focus the window which is on the left scren\n\nParameters:\n * None\n",
         "examples": [],
         "file": "Source/MoveWindowsOnScreens.spoon//init.lua",
-        "lineno": "94",
+        "lineno": "178",
         "name": "focusWindowLeft",
         "notes": [],
         "parameters": [
@@ -175,7 +175,7 @@
         "doc": "Focus the window which is on the right scren\n\nParameters:\n * None\n",
         "examples": [],
         "file": "Source/MoveWindowsOnScreens.spoon//init.lua",
-        "lineno": "105",
+        "lineno": "193",
         "name": "focusWindowRight",
         "notes": [],
         "parameters": [
@@ -192,7 +192,7 @@
         "doc": "Move the current window on the left screen and maximize it\n\nParameters:\n * None\n",
         "examples": [],
         "file": "Source/MoveWindowsOnScreens.spoon//init.lua",
-        "lineno": "70",
+        "lineno": "146",
         "name": "moveWindowLeft",
         "notes": [],
         "parameters": [
@@ -209,7 +209,7 @@
         "doc": "Move the current window on the right screen and maximize it\n\nParameters:\n * None\n",
         "examples": [],
         "file": "Source/MoveWindowsOnScreens.spoon//init.lua",
-        "lineno": "82",
+        "lineno": "162",
         "name": "moveWindowRight",
         "notes": [],
         "parameters": [
@@ -226,7 +226,7 @@
         "doc": "Open a chooser to select a window to place on the right screen and maximize it\n\nParameters:\n * None\n",
         "examples": [],
         "file": "Source/MoveWindowsOnScreens.spoon//init.lua",
-        "lineno": "143",
+        "lineno": "233",
         "name": "placeSelectedWindowOnTheRight",
         "notes": [],
         "parameters": [
@@ -243,7 +243,7 @@
         "doc": "Switch the screen of the current window and the window of the left/right screen\n\nParameters:\n * None\n",
         "examples": [],
         "file": "Source/MoveWindowsOnScreens.spoon//init.lua",
-        "lineno": "116",
+        "lineno": "208",
         "name": "switchWindowLeftAndRight",
         "notes": [],
         "parameters": [
