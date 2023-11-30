@@ -61,10 +61,28 @@ function placeChosenWindow(choice)
                          {nil, windowToPlace, currentWindow:screen(), hs.layout.right50, nil, nil}})
         windowToPlace:raise()
     else
-        windowToPlace:moveOneScreenEast(false, true, 0)
+        local nextScreen = hs.window.focusedWindow():screen():next()
+        windowToPlace:moveToScreen(nextScreen)
         windowToPlace:maximize()
         windowToPlace:raise()
     end
+end
+
+function isVerticalScreenLayout()
+    local screenPositions = hs.screen.screenPositions()
+    if #screenPositions > 1 then
+        return screenPositions[1].x == screenPositions[2].x
+    else
+        return false
+    end
+end
+
+function findMainWindowOncreen(screen)
+    local screenId = screen:id()
+    local windowFound = hs.fnutils.find(hs.window.orderedWindows(), function(window)
+        return window:screen():id() == screenId
+    end)
+    return windowFound
 end
 
 --- MoveWindowsOnScreens:moveWindowLeft()
@@ -74,8 +92,12 @@ end
 --- Parameters:
 ---  * None
 ---
-function obj:moveWindowLeft()
-    hs.window.focusedWindow():moveOneScreenWest(false, true, 0)
+function obj:moveWindowLeftOrDown()
+    if isVerticalScreenLayout() then
+        hs.window.focusedWindow():moveOneScreenSouth(false, true, 0)
+    else
+        hs.window.focusedWindow():moveOneScreenWest(false, true, 0)
+    end
     hs.window.focusedWindow():maximize()
 end
 
@@ -86,8 +108,12 @@ end
 --- Parameters:
 ---  * None
 ---
-function obj:moveWindowRight()
-    hs.window.focusedWindow():moveOneScreenEast(false, true, 0)
+function obj:moveWindowRightOrUp()
+    if isVerticalScreenLayout() then
+        hs.window.focusedWindow():moveOneScreenNorth(false, true, 0)
+    else
+        hs.window.focusedWindow():moveOneScreenEast(false, true, 0)
+    end
     hs.window.focusedWindow():maximize()
 end
 
@@ -98,8 +124,12 @@ end
 --- Parameters:
 ---  * None
 ---
-function obj:focusWindowLeft()
-    hs.window.focusedWindow():focusWindowWest(nil, true)
+function obj:focusWindowLeftOrDown()
+    if isVerticalScreenLayout() then
+        hs.window.focusedWindow():focusWindowSouth(nil, true)
+    else
+        hs.window.focusedWindow():focusWindowWest(nil, true)
+    end
 end
 
 --- MoveWindowsOnScreens:focusWindowRight()
@@ -109,8 +139,12 @@ end
 --- Parameters:
 ---  * None
 ---
-function obj:focusWindowRight()
-    hs.window.focusedWindow():focusWindowEast(nil, true)
+function obj:focusWindowRightOrUp()
+    if isVerticalScreenLayout() then
+        hs.window.focusedWindow():focusWindowNorth(nil, true)
+    else
+        hs.window.focusedWindow():focusWindowEast(nil, true)
+    end
 end
 
 --- MoveWindowsOnScreens:switchWindowLeftAndRight()
@@ -120,23 +154,21 @@ end
 --- Parameters:
 ---  * None
 ---
-function obj:switchWindowLeftAndRight()
+function obj:switchWindowWithNextScreen()
     local currentWindow = hs.window.focusedWindow()
-    local windowWest = first(currentWindow:windowsToWest(nil, true, true))
-    local windowEast = first(currentWindow:windowsToEast(nil, true, true))
+    local currentScreen = currentWindow:screen()
+    local nextScreen = currentScreen:next()
+    local windowOnNextScreen = findMainWindowOncreen(nextScreen)
 
-    if windowWest ~= nil then
-        windowWest:moveOneScreenEast(false, true, 0)
-        windowWest:maximize()
-        currentWindow:moveOneScreenWest(false, true, 0)
+    if currentWindow ~= nil then
+        currentWindow:moveToScreen(nextScreen)
         currentWindow:maximize()
-        windowWest:focus()
-    elseif windowEast ~= nil then
-        windowEast:moveOneScreenWest(false, true, 0)
-        windowEast:maximize()
-        currentWindow:moveOneScreenEast(false, true, 0)
-        currentWindow:maximize()
-        windowEast:focus()
+        currentWindow:focus()
+    end
+
+    if windowOnNextScreen ~= nil then
+        windowOnNextScreen:moveToScreen(currentScreen)
+        windowOnNextScreen:maximize()
     end
 end
 
@@ -147,10 +179,25 @@ end
 --- Parameters:
 ---  * None
 ---
-function obj:placeSelectedWindowOnTheRight()
+function obj:placeSelectedWindowOnNextScreen()
     local availableWindows = hs.fnutils.map(listOtherWindows(), mapWindowToChoice)
-    local windowChooser = hs.chooser.new(placeChosenWindow):placeholderText("Choose window to place on the right")
+    local windowChooser = hs.chooser.new(placeChosenWindow):placeholderText("Choose window to place on the next screen")
     windowChooser:choices(availableWindows):show()
+end
+
+function obj:focusWindowOnNextScreen()
+    local nextScreen = hs.window.focusedWindow():screen():next()
+    local windowOnNextScreen = findMainWindowOncreen(nextScreen)
+    if windowOnNextScreen ~= nil then
+        windowOnNextScreen:focus()
+    end
+end
+
+function obj:moveWindowOnNextScreen()
+    local currentWindow = hs.window.focusedWindow()
+    local nextScreen = currentWindow:screen():next()
+    currentWindow:moveToScreen(nextScreen)
+    currentWindow:maximize()
 end
 
 --- MoveWindowsOnScreens:bindHotkeys(mapping) -> self
@@ -164,12 +211,14 @@ end
 ---  * The MoveWindowsOnScreens object
 function obj:bindHotkeys(mapping)
     local spec = {
-        moveWindowLeft = hs.fnutils.partial(self.moveWindowLeft, self),
-        moveWindowRight = hs.fnutils.partial(self.moveWindowRight, self),
-        focusWindowLeft = hs.fnutils.partial(self.focusWindowLeft, self),
-        focusWindowRight = hs.fnutils.partial(self.focusWindowRight, self),
-        switchWindowLeftAndRight = hs.fnutils.partial(self.switchWindowLeftAndRight, self),
-        placeSelectedWindowOnTheRight = hs.fnutils.partial(self.placeSelectedWindowOnTheRight, self)
+        moveWindowLeftOrDown = hs.fnutils.partial(self.moveWindowLeftOrDown, self),
+        moveWindowRightOrUp = hs.fnutils.partial(self.moveWindowRightOrUp, self),
+        focusWindowLeftOrDown = hs.fnutils.partial(self.focusWindowLeftOrDown, self),
+        focusWindowRightOrUp = hs.fnutils.partial(self.focusWindowRightOrUp, self),
+        switchWindowWithNextScreen = hs.fnutils.partial(self.switchWindowWithNextScreen, self),
+        placeSelectedWindowOnNextScreen = hs.fnutils.partial(self.placeSelectedWindowOnNextScreen, self),
+        focusWindowOnNextScreen = hs.fnutils.partial(self.focusWindowOnNextScreen, self),
+        moveWindowOnNextScreen = hs.fnutils.partial(self.moveWindowOnNextScreen, self)
     }
     hs.spoons.bindHotkeysToSpec(spec, mapping)
     return self
