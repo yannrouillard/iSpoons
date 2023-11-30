@@ -16,6 +16,15 @@ obj.license = "MIT - https://opensource.org/licenses/MIT"
 -- Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.
 obj.logger = hs.logger.new('MoveWindowsOnScreens', 'info')
 
+obj._currentAlert = nil
+
+local arrows = {
+    left = "←",
+    right = "→",
+    up = "↑",
+    down = "↓"
+}
+
 local FORCE_ONSCREEN_SPLIT_MODIFIER = "alt"
 
 function first(table)
@@ -83,6 +92,55 @@ function findMainWindowOncreen(screen)
         return window:screen():id() == screenId
     end)
     return windowFound
+end
+
+function getSecondaryScreen()
+    local primaryScreen = hs.screen.primaryScreen()
+    return first(hs.fnutils.filter(hs.screen.allScreens(), function(screen)
+        return screen ~= primaryScreen
+    end))
+end
+
+function getScreenRelativePosition(screen)
+    local primaryScreenSize = hs.screen.primaryScreen():currentMode()
+    local screenSize = screen:currentMode()
+    local x, y = screen:position()
+    local position
+
+    if x == 0 and y <= -1 then
+        position = "up"
+    elseif x == 0 and y >= 1 then
+        position = "down"
+    elseif x >= 1 and y == 0 then
+        position = "right"
+    else
+        position = "left"
+    end
+    return position
+end
+
+function setScreenRelativePosition(screen, position)
+    local primaryScreenSize = hs.screen.primaryScreen():currentMode()
+    local secondaryScreenSize = screen:currentMode()
+
+    local x = 0
+    local y = 0
+
+    if position == "up" then
+        x = (primaryScreenSize.w - secondaryScreenSize.w) // 2
+        y = 0 - secondaryScreenSize.h
+    elseif position == "down" then
+        x = (primaryScreenSize.w - secondaryScreenSize.w) // 2
+        y = primaryScreenSize.h
+    elseif position == "right" then
+        x = primaryScreenSize.w
+        y = (primaryScreenSize.h - secondaryScreenSize.h) // 2
+    elseif position == "left" then
+        x = 0 - secondaryScreenSize.w
+        y = (primaryScreenSize.h - secondaryScreenSize.h) // 2
+    end
+
+    screen:setOrigin(x, y)
 end
 
 --- MoveWindowsOnScreens:moveWindowLeft()
@@ -200,6 +258,23 @@ function obj:moveWindowOnNextScreen()
     currentWindow:maximize()
 end
 
+function obj:moveSecondaryScreenAround()
+    local availablePositions = {"up", "right", "down", "left"}
+
+    local secondaryScreen = getSecondaryScreen()
+    local position = getScreenRelativePosition(secondaryScreen)
+
+    local nextPosition = availablePositions[hs.fnutils.indexOf(availablePositions, position) % #availablePositions + 1]
+
+    obj.logger.d("Moving secondary screen from " .. position .. " to " .. nextPosition)
+    setScreenRelativePosition(secondaryScreen, nextPosition)
+    if obj._currentAlert ~= nil then
+        hs.alert.closeSpecific(obj._currentAlert)
+    end
+    obj._currentAlert = hs.alert.show("Screen 🖥️ " .. nextPosition .. " " .. arrows[nextPosition])
+
+end
+
 --- MoveWindowsOnScreens:bindHotkeys(mapping) -> self
 --- Method
 --- Binds hotkeys for MoveWindowsOnScreens
@@ -218,7 +293,8 @@ function obj:bindHotkeys(mapping)
         switchWindowWithNextScreen = hs.fnutils.partial(self.switchWindowWithNextScreen, self),
         placeSelectedWindowOnNextScreen = hs.fnutils.partial(self.placeSelectedWindowOnNextScreen, self),
         focusWindowOnNextScreen = hs.fnutils.partial(self.focusWindowOnNextScreen, self),
-        moveWindowOnNextScreen = hs.fnutils.partial(self.moveWindowOnNextScreen, self)
+        moveWindowOnNextScreen = hs.fnutils.partial(self.moveWindowOnNextScreen, self),
+        moveSecondaryScreenAround = hs.fnutils.partial(self.moveSecondaryScreenAround, self)
     }
     hs.spoons.bindHotkeysToSpec(spec, mapping)
     return self
