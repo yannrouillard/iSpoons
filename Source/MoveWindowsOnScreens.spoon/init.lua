@@ -262,6 +262,10 @@ function obj:moveSecondaryScreenAround()
     local availablePositions = {"up", "right", "down", "left"}
 
     local secondaryScreen = getSecondaryScreen()
+    if secondaryScreen == nil then
+        obj._currentAlert = hs.alert.show("No Secondary Screen 🖥️ ")
+        return
+    end
     local position = getScreenRelativePosition(secondaryScreen)
 
     local nextPosition = availablePositions[hs.fnutils.indexOf(availablePositions, position) % #availablePositions + 1]
