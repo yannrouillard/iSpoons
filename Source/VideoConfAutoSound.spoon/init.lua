@@ -63,7 +63,7 @@ end
 local saveSoundState = function()
     soundState = {
         spotifyPlaying = hs.spotify.isPlaying(),
-        firefoxPlaying = isFirefoxPlaying(),
+        -- firefoxPlaying = isFirefoxPlaying(),
         soundVolume = hs.audiodevice.defaultOutputDevice():volume()
     }
     obj.logger.i("SoundState: " .. hs.inspect.inspect(soundState))
@@ -79,8 +79,8 @@ local restoreSoundState = function()
                 obj.logger.d("Resuming Spotify playing")
                 hs.spotify.play()
             end)
-        elseif soundState.firefoxPlaying then
-            hs.eventtap.event.newSystemKeyEvent('PLAY', true):post()
+            -- elseif soundState.firefoxPlaying then
+            --     hs.eventtap.event.newSystemKeyEvent('PLAY', true):post()
         end
     end
 end
@@ -95,8 +95,8 @@ local adjustSoundEnvironmentForVideoConference = function(uuid, eventName)
             if soundState.spotifyPlaying then
                 obj.logger.d("Pausing Spotify for Videoconference")
                 hs.spotify.pause()
-            elseif soundState.firefoxPlaying then
-                hs.eventtap.event.newSystemKeyEvent('PLAY', true):post()
+                -- elseif soundState.firefoxPlaying then
+                --     hs.eventtap.event.newSystemKeyEvent('PLAY', true):post()
             end
             -- we wait a small delay to not increase sound while spotify is still playing
             delayedTimer = hs.timer.doAfter(soundChangeDelay, function()
