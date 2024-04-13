@@ -43,7 +43,7 @@ end
 ---  * None
 ---
 function obj:toggleSidecar()
-    local lunarPath = os.getenv("HOME") .. "/.local/bin/lunar2"
+    local lunarPath = os.getenv("HOME") .. "/.local/bin/lunar"
     if hs.fs.displayName(lunarPath) == nil then
         obj.logger.e("Unable to toggle sidecar: " .. hs.inspect.inspect(err))
         hs.notify.show("Lunar CLI not found!",
