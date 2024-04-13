@@ -30,7 +30,10 @@ end
 local modifyNameMap = function(info, add)
     for _, item in ipairs(info) do
         icon = nil
-        local displayname = item.kMDItemDisplayName or hs.fs.displayName(item.kMDItemPath)
+        local displayname = "Unknown"
+        if item.kMDItemDisplayName or item.kMDItemPath then
+            displayname = item.kMDItemDisplayName or hs.fs.displayName(item.kMDItemPath)
+        end
         displayname = displayname:gsub("%.app$", "", 1)
         if string.find(item.kMDItemPath, "%.prefPane$") then
             displayname = displayname .. " preferences"
